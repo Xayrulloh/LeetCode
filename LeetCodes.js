@@ -84,6 +84,34 @@ console.log(romanToInt("MCD"));*/
 }
 console.log(longestCommonPrefix(["cir","car"]));*/
 
+// 5 exercise
+/*function isValid(str) {
+    let map = {
+        ')': '(',
+        '}': '{',
+        ']': '['
+    }
+    let stck = []
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === '(' || str[i] === '[' || str[i] === '{') {
+            stck.push(str[i])
+        } else if (stck[stck.length - 1] === map[str[i]]) {
+            stck.pop()
+        } else return false
+        console.log(stck);
+    }
+    return stck.length ? false : true
+}
+console.log(isValid("(((()()(){)}))"));*/
+
+// 6 exercise
+function mergeTwoLists(list1, list2) {
+    let newlist = []
+    newlist = newlist.concat(list2)
+    newlist = newlist.concat(list1)
+    return newlist.sort((a, b) => a > b ? 1 : -1)
+}
+console.log(mergeTwoLists([1, 2, 4], [1, 3, 4]));
 
 
 
