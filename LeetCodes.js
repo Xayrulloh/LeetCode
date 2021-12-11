@@ -104,14 +104,29 @@ console.log(longestCommonPrefix(["cir","car"]));*/
 }
 console.log(isValid("(((()()(){)}))"));*/
 
-// 6 exercise
-function mergeTwoLists(list1, list2) {
-    let newlist = []
-    newlist = newlist.concat(list2)
-    newlist = newlist.concat(list1)
-    return newlist.sort((a, b) => a > b ? 1 : -1)
-}
-console.log(mergeTwoLists([1, 2, 4], [1, 3, 4]));
+// 6 exercise need repair
+// function mergeTwoLists(list1, list2) {
+//     let newlist = []
+//     let leftIndex = 0
+//     let rightIndex = 0
+//     while (leftIndex < list1.length && rightIndex < list2.length) {
+//         const leftEl = list1[leftIndex]
+//         const rightEl = list2[rightIndex]
+//         if (leftEl < rightEl) {
+//             newlist.push(leftEl)
+//             leftIndex++
+//         }
+//         else {
+//             newlist.push(rightEl)
+//             rightIndex++
+//         }
+//     }
+//     return [...newlist, ...list1.slice(leftIndex), ...list2.slice(rightIndex)]
+// }
+// console.log(mergeTwoLists([1, 2, 4], [1, 3, 4]));
+
+// 7 exercise
+
 
 
 
