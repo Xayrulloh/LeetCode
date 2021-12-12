@@ -126,8 +126,16 @@ console.log(isValid("(((()()(){)}))"));*/
 // console.log(mergeTwoLists([1, 2, 4], [1, 3, 4]));
 
 // 7 exercise
-
-
+function removeDuplicates(arr) {
+    let newarr = arr.length
+    let neewarr = []
+    arr = new Set(arr)
+    let answer = newarr - arr.size
+    arr.forEach(element => {neewarr.push(element)});
+    // for (let a = 0; a < answer; a++) neewarr.push('_')
+    return neewarr
+}
+console.log(removeDuplicates([1, 1, 2]));
 
 
 
