@@ -164,8 +164,19 @@ console.log(removeElement([0,1,2,2,3,0,4,2], 2));*/
 console.log(strStr("", "a"));*/
 
 // 10 - exercise
+/*function searchInsert(arr, target) {
+    if (arr.includes(target)) {
+        return arr.indexOf(target)
+    }else {
+        for (let a = 0; a < arr.length; a++) {
+            if (target < arr[a]) return a   
+        }
+    }
+    return arr.length
+}
+console.log(searchInsert([1, 3, 5, 6], 2));*/
 
-
+// 11 exercise
 
 
 
