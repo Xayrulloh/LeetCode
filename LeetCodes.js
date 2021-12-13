@@ -177,8 +177,21 @@ console.log(strStr("", "a"));*/
 console.log(searchInsert([1, 3, 5, 6], 2));*/
 
 // 11 exercise
-
-
+/*function maxSubArray(arr) {
+    let sum = arr[0]
+    let simply = 0
+    for (let a = 0; a < arr.length; a++) {
+        for (let b = a; b < arr.length; b++) {
+            simply += arr[b]
+            if (sum < simply) {
+                sum = simply
+            }
+        }
+        simply=0
+    }
+    return sum
+}
+console.log(maxSubArray([5,4,-1,7,8]));*/
 
 
 
