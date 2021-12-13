@@ -126,17 +126,44 @@ console.log(isValid("(((()()(){)}))"));*/
 // console.log(mergeTwoLists([1, 2, 4], [1, 3, 4]));
 
 // 7 exercise
-function removeDuplicates(arr) {
-    let newarr = arr.length
-    let neewarr = []
-    arr = new Set(arr)
-    let answer = newarr - arr.size
-    arr.forEach(element => {neewarr.push(element)});
-    // for (let a = 0; a < answer; a++) neewarr.push('_')
-    return neewarr
+/*function removeDuplicates(arr) {
+    for (let a = 0; a < arr.length; a++) {
+        for (let b = 0; b < arr.length; b++) {
+            if (a != b) {
+                if (arr[a] == arr[b]) {
+                    arr.splice(a, 1)
+                    b -= 1
+                }
+            }
+        }
+    }
+    return arr.length
 }
-console.log(removeDuplicates([1, 1, 2]));
+console.log(removeDuplicates([0,0,0,0,0, 0, 0]));*/
 
+// 8 exercise
+/*function removeElement(arr, num) {
+    for (let a = 0; a < arr.length; a++) {
+       if (arr[a] === num) {
+           arr.splice(a, 1)
+           a--
+       }
+    }
+    return arr.length
+}
+console.log(removeElement([0,1,2,2,3,0,4,2], 2));*/
+
+// 9 exercise
+/*function strStr(str, element) {
+    if (str || element) {
+        if (str.includes(element)) {
+            return str.indexOf(element)
+        }else return -1
+    }else return 0
+}
+console.log(strStr("", "a"));*/
+
+// 10 - exercise
 
 
 
