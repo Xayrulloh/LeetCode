@@ -252,6 +252,29 @@ console.log(plusOne([6,1,4,5,3,9,0,1,9,5,1,8,6,7,0,5,5,4,3]));*/
 }
 console.log(mySqrt(4));*/
 
+// climbStairs
+/*function climbStairs(num) {
+    let [first, second] = [1, 2]
+    if (num === 1 || num === 0) return 1
+    for (let a = 3; a <= num; a++) {
+        let third = first + second
+        first = second
+        second = third
+    }
+    return second
+}
+console.log(climbStairs(5));*/
+
+// Remove Duplicates
+/*function deleteDuplicates(arr) {
+    let newarr = []
+    for (let a = 0; a < arr.length; a++) {
+        if (!newarr.includes(arr[a])) newarr.push(arr[a])
+    }
+    return newarr
+}
+console.log(deleteDuplicates([1,1,2]));*/
+
 
 
 
