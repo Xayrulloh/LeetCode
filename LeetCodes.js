@@ -1,4 +1,4 @@
-// 1 exercise
+// twoSum
 /*var twoSum = function(arr, target) {
     let newarr = []
     for (let a = 0; a < arr.length; a++) {
@@ -15,11 +15,11 @@
 };
 console.log(twoSum([3, 2, 4], 6));*/
 
-// 2 exercise
+// palindrome
 /*let palindrome = (num) => {let rev = Number(String(num).split('').reverse().join('')); return rev === num ? true : false}
 console.log(palindrome(121));*/
 
-// 3 exercise
+// romanToInt
 /*function romanToInt(str) {
     let sum = 0
     for (let a = str.length-1; a >= 0; a--) {
@@ -65,7 +65,7 @@ console.log(palindrome(121));*/
 }
 console.log(romanToInt("MCD"));*/
 
-// 4 exercise
+// longestCommonPrefix
 /*function longestCommonPrefix(arr) {
     let str = ''
     let solishtirish2 = arr[0]
@@ -84,7 +84,7 @@ console.log(romanToInt("MCD"));*/
 }
 console.log(longestCommonPrefix(["cir","car"]));*/
 
-// 5 exercise
+// isValid
 /*function isValid(str) {
     let map = {
         ')': '(',
@@ -104,7 +104,7 @@ console.log(longestCommonPrefix(["cir","car"]));*/
 }
 console.log(isValid("(((()()(){)}))"));*/
 
-// 6 exercise need repair
+// Merge Two Sorted Lists
 // function mergeTwoLists(list1, list2) {
 //     let newlist = []
 //     let leftIndex = 0
@@ -125,7 +125,7 @@ console.log(isValid("(((()()(){)}))"));*/
 // }
 // console.log(mergeTwoLists([1, 2, 4], [1, 3, 4]));
 
-// 7 exercise
+// removeDuplicates
 /*function removeDuplicates(arr) {
     for (let a = 0; a < arr.length; a++) {
         for (let b = 0; b < arr.length; b++) {
@@ -141,7 +141,7 @@ console.log(isValid("(((()()(){)}))"));*/
 }
 console.log(removeDuplicates([0,0,0,0,0, 0, 0]));*/
 
-// 8 exercise
+// removeElement
 /*function removeElement(arr, num) {
     for (let a = 0; a < arr.length; a++) {
        if (arr[a] === num) {
@@ -153,7 +153,7 @@ console.log(removeDuplicates([0,0,0,0,0, 0, 0]));*/
 }
 console.log(removeElement([0,1,2,2,3,0,4,2], 2));*/
 
-// 9 exercise
+// strStr
 /*function strStr(str, element) {
     if (str || element) {
         if (str.includes(element)) {
@@ -163,7 +163,7 @@ console.log(removeElement([0,1,2,2,3,0,4,2], 2));*/
 }
 console.log(strStr("", "a"));*/
 
-// 10 - exercise
+// searchInsert
 /*function searchInsert(arr, target) {
     if (arr.includes(target)) {
         return arr.indexOf(target)
@@ -176,7 +176,7 @@ console.log(strStr("", "a"));*/
 }
 console.log(searchInsert([1, 3, 5, 6], 2));*/
 
-// 11 exercise
+// maxSubArray
 /*function maxSubArray(arr) {
     let sum = arr[0]
     let simply = 0
@@ -192,6 +192,43 @@ console.log(searchInsert([1, 3, 5, 6], 2));*/
     return sum
 }
 console.log(maxSubArray([5,4,-1,7,8]));*/
+
+// lengthOfLastWord
+/*function lengthOfLastWord(str) {
+    str = str.trim().split(/\s+/);
+    return str[str.length - 1].length
+}
+console.log(lengthOfLastWord("Hello World"))*/
+
+// 13 exercise tuzatw kere
+/*function addTwoNumbers(arr, arr2) {
+    let str1 = ''
+    let str2 = ''
+    let result = []
+    for (let a = arr.length - 1; a >= 0; a--) {
+        str1 += arr[a]
+    }
+    for (let a = arr2.length - 1; a >= 0; a--) {
+        str2 += arr2[a]
+    }
+    let check = (String(Number(str1) + Number(str2)).split('').reverse())
+    check.forEach(element => {result.push(Number(element))});
+    return result
+}
+console.log(addTwoNumbers([2, 4, 3], [5, 6, 4]));*/
+
+// Plus one
+/*function plusOne(arr) {
+    let str = ''
+    str = str.join('')
+    console.log(str);
+    str = Number(str) + 1
+    console.log(str);
+    let myFunc = num => Number(num);
+    let intArr = Array.from(String(str), myFunc);
+    return intArr
+}
+console.log(plusOne([6,1,4,5,3,9,0,1,9,5,1,8,6,7,0,5,5,4,3]));*/
 
 
 
