@@ -230,5 +230,36 @@ console.log(addTwoNumbers([2, 4, 3], [5, 6, 4]));*/
 }
 console.log(plusOne([6,1,4,5,3,9,0,1,9,5,1,8,6,7,0,5,5,4,3]));*/
 
+// AddBinary
+/*let addBinary = function(a, b) {
+    let carry = 0, result = "";
+    let i = a.length - 1, j = b.length - 1;
+    while(i >= 0 || j >= 0) {
+      let num1 = i < 0 ? 0 : a[i] | 0;
+      let num2 = j < 0 ? 0 : b[j] | 0;
+      carry = carry + num1 + num2;
+      result = carry % 2 + result; //concat string in proper order
+      carry = carry / 2 | 0;
+      i--;
+      j--;
+    }
+    return carry ? carry + result : result;
+  };*/
+
+// Sqrt(x)
+/*function mySqrt(x) {
+    return Math.sqrt(x) | 0
+}
+console.log(mySqrt(4));*/
+
+
+
+
+
+
+
+
+
+
 
 
