@@ -1,3 +1,4 @@
+"use strict"
 // twoSum
 /*var twoSum = function(arr, target) {
     let newarr = []
@@ -275,9 +276,20 @@ console.log(climbStairs(5));*/
 }
 console.log(deleteDuplicates([1,1,2]));*/
 
-
-
-
+// Anagrams
+/*function groupAnagrams(arr) {
+    let obj = {}
+    for (let str of arr) {
+        let key = [...str].sort().join('')
+        if (!obj[key]) {
+            obj[key] = []
+        }
+        obj[key].push(str)
+    }
+    let arrr = Object.values(obj)
+    return arrr
+}
+console.log(groupAnagrams(['eat', 'ate', 'tea', 'boy', 'yob', 'oby']));*/
 
 
 
