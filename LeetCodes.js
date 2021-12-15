@@ -291,12 +291,48 @@ console.log(deleteDuplicates([1,1,2]));*/
 }
 console.log(groupAnagrams(['eat', 'ate', 'tea', 'boy', 'yob', 'oby']));*/
 
+// Merge Sorted Array
+/*function merge(arr1, num1, arr2, num2) {
+    arr1 = arr1.splice(0, num1)
+    arr2 = arr2.splice(0, num2)
+    if (num1 === 0 && num2 != 0) return num2
+    if (num2 === 0 && num1 != 0) return num1
+    if (num2 === 0 && num1 === 0) return 0
+    arr2 = arr2.concat(arr1)
+    return arr2.sort((a, b) => a > b ? 1 : -1)
+}
+console.log(merge([1,2,3,0,0,0], 3, [2,5,6], 3));*/
 
+// Binary Tree Inorder Traversal 
 
+// Same Tree
 
+// Symmetric Tree
 
+// Maximum Depth of Binary Tree
 
+// Convert Sorted Array to Binary Search Tree
 
+// Balanced Binary Tree
+
+// Minimum Depth of Binary Tree
+
+// Path Sum
+
+// Pascal's triangle
+/*function generate(numRows) {
+    let result = []
+    for (let a = 0; a < numRows; a++) {
+        result[a] = []
+        result[a][0] = result[a][a] = 1
+        for (let b = 1; b < a; b++) {
+            result[a][b] = result[a - 1][b] + result[a - 1][b - 1]
+            console.log(result);
+        }
+    }
+    return result
+}
+console.log(generate(5));*/
 
 
 
