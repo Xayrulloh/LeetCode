@@ -334,8 +334,30 @@ console.log(merge([1,2,3,0,0,0], 3, [2,5,6], 3));*/
 }
 console.log(generate(5));*/
 
+// Pascal's triangle
+/*function getRow(numRows) {
+    let result = []
+    for (let a = 0; a <= numRows; a++) {
+        result[a] = []
+        result[a][0] = result[a][a] = 1
+        for (let b = 1; b < a; b++) {
+            result[a][b] = result[a - 1][b] + result[a - 1][b - 1]
+        }
+    }
+    return result[result.length - 1]
+}
+console.log(generate(3));*/
 
-
+// Remove All Occurrences of a Substring
+/*var removeOccurrences = function(s, part) {
+    let sum = s
+    for(let i = 0; i < s.length; i++){
+        sum = sum.replace(part, '')
+        console.log(sum);
+    }
+    return sum
+};
+console.log(removeOccurrences("daabcbaabcbc", "abc"));*/
 
 
 
