@@ -408,9 +408,49 @@ console.log(isPalindrome("ab_a"));*/
         if (arr[a] != arr[a + 1]) return arr[a]
     }
 }
-console.log(singleNumber([1, 2, 2, 1, 4]));/
+console.log(singleNumber([1, 2, 2, 1, 4]));*/
 
+// Linked List Cycle
 
+// Min Stack
+
+// Two Sum II - Input Array Is Sorted
+/*function twoSum(arr, target) {
+    for (let a = 0; a <= arr.length; a++) {
+        for (let b = a + 1; b < arr.length; b++) {
+            if (arr[a] + arr[b] === target) return [a+1, b+1]
+
+        }
+    }
+} 
+console.log(twoSum([2,7,11,15], 9));*/
+
+// Majority Element
+/*function majorityElement(arr) {
+    if (arr.length === 1) return arr[0]
+    let count = 1
+    for (let a = 0; a <= arr.length; a++) {
+        for (let b = a + 1; b < arr.length; b++) {
+            if (arr[a] === arr[b]) count++
+            if (count > arr.length / 2) return arr[a]
+        }
+        count = 1
+    }
+}
+console.log(majorityElement([2,2,3,3,3,3,2]));*/
+
+// Contains Duplicate II
+/*function containsNearbyDuplicate(nums, k) {
+    const map = new Map()
+    for (let a = 0; a < nums.length; a++) {
+        if (a - map.get(nums[a]) <= k) {
+            return true
+        }
+        map.set(nums[a], a)
+    }
+    return false
+}
+console.log(containsNearbyDuplicate([1,2,3,1], 3));*/
 
 
 
