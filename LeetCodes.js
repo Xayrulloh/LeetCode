@@ -359,7 +359,32 @@ console.log(generate(3));*/
 };
 console.log(removeOccurrences("daabcbaabcbc", "abc"));*/
 
+// Best Time to Buy and Sell Stock
+/*function maxProfit(arr) {
+    let num = 0
+    let res = 0
+    for (let a = 0; a < arr.length - 1; a++) {
+        for (let b = a + 1; b < arr.length; b++) {
+            num = arr[b] - arr[a]
+            if (res < num) res = num
+        }
+    }
+    return res
+}
+console.log(maxProfit([7, 1, 5, 3, 6, 4, 10, 19]));*/
 
+// Count Items Matching a Rule
+/*function countMatches(items, ruleKey, ruleValue) {
+    let count = 0
+    let arr = ['type', 'color', 'name']
+    let index = arr.indexOf(ruleKey)
+    for (let a = 0; a < items.length; a++) {
+        if (items[a][index] == ruleValue) count++
+        console.log(items[a]);
+    }
+    return count
+}
+console.log(countMatches([["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]], 'color', 'silver'));*/
 
 
 
