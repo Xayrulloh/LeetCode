@@ -386,10 +386,29 @@ console.log(maxProfit([7, 1, 5, 3, 6, 4, 10, 19]));*/
 }
 console.log(countMatches([["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]], 'color', 'silver'));*/
 
+// Valid Palindrome
+/*function isPalindrome(str) {
+    str = str.replace(/\W/g, '').toLowerCase()
+    for (let a = 0; a < str.length; a++) {
+        if (str[a] === '_') {
+            str = str.slice(0, a) + str.slice(a + 1, str.length)
+        }
+    }
+    for (let a = 0; a < str.length; a++) {
+        if (str[a] !== str[str.length - a - 1]) return false
+    }
+    return true
+}
+console.log(isPalindrome("ab_a"));*/
 
-
-
-
+// Single Number
+/*function singleNumber(arr) {
+    arr.sort()
+    for (let a = 0; a < arr.length; a+=2) {
+        if (arr[a] != arr[a + 1]) return arr[a]
+    }
+}
+console.log(singleNumber([1, 2, 2, 1, 4]));/
 
 
 
