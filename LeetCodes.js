@@ -105,26 +105,26 @@ console.log(longestCommonPrefix(["cir","car"]));*/
 }
 console.log(isValid("(((()()(){)}))"));*/
 
-// Merge Two Sorted Lists
-// function mergeTwoLists(list1, list2) {
-//     let newlist = []
-//     let leftIndex = 0
-//     let rightIndex = 0
-//     while (leftIndex < list1.length && rightIndex < list2.length) {
-//         const leftEl = list1[leftIndex]
-//         const rightEl = list2[rightIndex]
-//         if (leftEl < rightEl) {
-//             newlist.push(leftEl)
-//             leftIndex++
-//         }
-//         else {
-//             newlist.push(rightEl)
-//             rightIndex++
-//         }
-//     }
-//     return [...newlist, ...list1.slice(leftIndex), ...list2.slice(rightIndex)]
-// }
-// console.log(mergeTwoLists([1, 2, 4], [1, 3, 4]));
+// Merge Two Sorted Lists vaqtida yemi qogan
+/*function mergeTwoLists(list1, list2) {
+    let newlist = []
+    let leftIndex = 0
+    let rightIndex = 0
+    while (leftIndex < list1.length && rightIndex < list2.length) {
+        const leftEl = list1[leftIndex]
+        const rightEl = list2[rightIndex]
+        if (leftEl < rightEl) {
+            newlist.push(leftEl)
+            leftIndex++
+        }
+        else {
+            newlist.push(rightEl)
+            rightIndex++
+        }
+    }
+    return [...newlist, ...list1.slice(leftIndex), ...list2.slice(rightIndex)]
+}
+console.log(mergeTwoLists([1, 2, 4], [1, 3, 4]));*/
 
 // removeDuplicates
 /*function removeDuplicates(arr) {
@@ -303,13 +303,44 @@ console.log(groupAnagrams(['eat', 'ate', 'tea', 'boy', 'yob', 'oby']));*/
 }
 console.log(merge([1,2,3,0,0,0], 3, [2,5,6], 3));*/
 
-// Binary Tree Inorder Traversal 
+// Binary Tree Inorder Traversal
+/*function inorderTraversal(root) {
+    let result = []
+    inorder(root);
+    function inorder(root) {
+        if (!root) return null;
+        inorder(root.left)
+        result.push(root.val)
+        inorder(root.right)
+    }
+    return result
+}*/
 
 // Same Tree
+/*function isSameTree(p, q) {
+    if ((!p && q) || (p && !q) || (p && q && p.val !== q.val)) return false
+    if (p && q) return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+    return true
+}*/
 
 // Symmetric Tree
+/*function isSymmetric(root) {
+    let result = true
+    function checkIsSymetric(node1, node2) {
+        if (!node1 && !node2) return;
+        if (!node1 || !node2 || node1.val !== node2.val) {
+            result = false
+            return;
+        }
+        checkIsSymetric(node1.left, node2.right)
+        checkIsSymetric(node1.right, node2.left)
+    }
+    checkIsSymetric(root, root)
+    return result
+}*/
 
 // Maximum Depth of Binary Tree
+
 
 // Convert Sorted Array to Binary Search Tree
 
@@ -451,6 +482,64 @@ console.log(majorityElement([2,2,3,3,3,3,2]));*/
     return false
 }
 console.log(containsNearbyDuplicate([1,2,3,1], 3));*/
+
+// Excel Sheet Column Title
+/*var convertToTitle = function(n) {
+    var num = n;
+    var tmp = 0;
+    var res = '';
+    while (num > 0) {
+      tmp = num % 26;
+      if (tmp === 0) tmp = 26;
+      res = getChar(tmp) + res;
+      num = (num - tmp) / 26;
+    }
+    return res;
+  };
+  
+  var getChar = function (num) {
+    var start = 'A'.charCodeAt(0);
+    return String.fromCharCode(start + num - 1);
+  };
+  console.log(convertToTitle(701));*/
+
+// Excel Sheet Column Number
+/*function titleToNumber(s) {
+    const dict = {
+                A: 1, B: 2, C: 3, D: 4, E: 5, F: 6, G: 7, H: 8, I: 9, J: 10, K: 11, L: 12, M: 13, N: 14,
+                O: 15, P: 16, Q: 17, R: 18, S: 19, T: 20, U: 21, V: 22, W: 23, X: 24, Y: 25, Z: 26
+            }
+    let number = 0
+    let power = 0
+    for (let a = s.length - 1; a >= 0; a--) {
+        number += Math.pow(26, power) * dict[s[a]]
+        console.log(number);
+        power++
+    }
+    return number
+}
+console.log(titleToNumber('ZY'));*/
+
+// Happy Number
+/*function isHappy(num, obj = {}) {
+    const str = num.toString()
+    let total = 0
+    for (let a = 0; a < str.length; a++) {
+        total += parseInt(str[a]) * parseInt(str[a])
+    }
+    if (total === 1) return true
+    if (obj[total] != undefined) return false
+    obj[total] = total
+    return isHappy(total, obj)
+}
+console.log(isHappy(19));*/
+
+
+
+
+
+
+
 
 
 
