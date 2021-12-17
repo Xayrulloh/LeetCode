@@ -340,11 +340,28 @@ console.log(merge([1,2,3,0,0,0], 3, [2,5,6], 3));*/
 }*/
 
 // Maximum Depth of Binary Tree
-
+/*let maxDepth = (root) => {let helper = (node) => {if (node == null) return 0; return Math.max(helper(node.left), helper(node.right)) + 1}; return helper(root)}*/
 
 // Convert Sorted Array to Binary Search Tree
+/*let sortedArrayToBST = (nums) => helper(nums, 0, nums.length - 1)
+function helper(nums, ll, rr) {
+    if (ll > rr) return null
+    let mid = Math.ceil((ll + rr) / 2)
+    let root = new TreeNode(nums[mid])
+    root.left = helper(nums, ll, mid - 1)
+    root.right = helper(nums, mid + 1, rr)
+    return root
+}*/
 
 // Balanced Binary Tree
+/*let isBalanced = (root) => helper(root, 0) >= 0
+function helper(root, depth) {
+    if (!root) return depth;
+    let left = helper(root.left, depth + 1)
+    let right = helper(root.right, depth + 1)
+    if (left === -1 || right === - 1 || Math.abs(left - right) > 1) return -1
+    return Math.max(left, right)
+}*/
 
 // Minimum Depth of Binary Tree
 
