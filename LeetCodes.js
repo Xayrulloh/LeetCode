@@ -364,8 +364,10 @@ function helper(root, depth) {
 }*/
 
 // Minimum Depth of Binary Tree
+/*let minDepth = (root) => {if (!root) return 0; if(!root.left) return minDepth(root.right) + 1; if(!root.right) return minDepth(root.left) + 1; return Math.min(minDepth(root.left), minDepth(root.right)) + 1}*/
 
 // Path Sum
+/*let hasPathSum = (root, sum) => {if (!root) return false; if (root.val === sum && !root.left && !root.right) return true; return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val)}*/
 
 // Pascal's triangle
 /*function generate(numRows) {
