@@ -553,6 +553,27 @@ console.log(titleToNumber('ZY'));*/
 }
 console.log(isHappy(19));*/
 
+// Remove Linked List Elements
+/*function removeElements(head, val) {
+    if (!head) return null
+    head.next = removeElements(head.next, val)
+    return head.val == val ? head.next : head
+}
+console.log(removeElements([1,2,6,3,4,5,6], 6));*/
+
+// Fizz Buzz
+/*function fizzBuzz(num) {
+    let res = []
+    for (let a = 1; a <= num; a++) {
+        if (a % 3 === 0 && a % 5 === 0) {res.push("FizzBuzz"); continue}
+        if (a % 3 === 0) {res.push("Fizz"); continue}
+        if (a % 5 === 0) {res.push("Buzz"); continue}
+        else res.push(a.toString())
+    }
+    return res
+}
+console.log(fizzBuzz(5));*/
+
 
 
 
