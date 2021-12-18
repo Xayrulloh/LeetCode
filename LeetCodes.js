@@ -617,6 +617,26 @@ console.log(reverseString(["h","e","l","l","o"]));*/
 }
 console.log(isPowerOfThree(27));*/
 
+// Move Zeroes
+/*function moveZeroes(arr) {
+    for (let a = arr.length; a >= 0; a--) {
+        if (arr[a] == 0) {
+            arr.splice(a, 1)
+            arr.push(0)
+        }
+    }
+    return arr
+}
+console.log(moveZeroes([0, 1, 6, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 98]));*/
+
+// Missing Number
+/*function missingNumber(a) {
+    let xor=0;
+    for(let i=1;i<=a.length;i++) xor^=i;
+    for(let i of a) xor^=i;
+    return xor;
+};
+console.log(missingNumber([9,6,4,2,3,5,7,0,1]));*/
 
 
 
