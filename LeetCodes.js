@@ -638,7 +638,21 @@ console.log(moveZeroes([0, 1, 6, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 98]));*/
 };
 console.log(missingNumber([9,6,4,2,3,5,7,0,1]));*/
 
+// Valid Anagram
+/*function isAnagram(str1, str2) {
+    str1 = str1.split('').sort().join('')
+    str2 = str2.split('').sort().join('')
+    return str1 === str2 ? true : false
+}
+console.log(isAnagram("anagram", "nagaram"));*/
 
+// Delete Node in a Linked List
+/*function deleteNote(node) {
+    let temp = node.next
+    node.val = temp.val
+    node.next = temp.next
+    delete temp
+}*/
 
 
 
