@@ -574,6 +574,29 @@ console.log(removeElements([1,2,6,3,4,5,6], 6));*/
 }
 console.log(fizzBuzz(5));*/
 
+// First Unique Character in a String
+/*function firstUniqChar(str) {
+    for( let a = 0; a < str.length; a++) {
+        let word = str[a]
+        if (str.indexOf(word) === str.lastIndexOf(word)) {
+            return a
+        }
+    }
+    return -1
+}
+console.log(firstUniqChar('aaleetcode'));*/
+
+// Intersection of Two Arrays II
+/*function intersect(arr1, arr2) {
+    let res = []
+    for (let a = 0; a < arr1.length; a++) {
+        let element = arr1[a]
+        let index = arr2.indexOf(element)
+        if (index != -1) res = res.concat(arr2.splice(index, 1))
+    }
+    return res
+}
+console.log(intersect([3,1, 2],[1,1]));*/
 
 
 
