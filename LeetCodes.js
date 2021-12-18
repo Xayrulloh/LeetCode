@@ -598,8 +598,24 @@ console.log(firstUniqChar('aaleetcode'));*/
 }
 console.log(intersect([3,1, 2],[1,1]));*/
 
+// Reverse String
+/*function reverseString(arr) {
+    arr = arr.reverse()
+    return arr
+}
+console.log(reverseString(["h","e","l","l","o"]));*/
 
-
+// Power of Three
+/*function isPowerOfThree(num) {
+    if (num === 1) return true
+    let count = 3
+    while (count < num) {
+        count *= 3
+        console.log(count);
+    }
+    return count === num ? true : false
+}
+console.log(isPowerOfThree(27));*/
 
 
 
