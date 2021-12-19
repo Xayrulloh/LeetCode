@@ -729,7 +729,20 @@ console.log(longestPalindrome("a"));*/
   return s.substring(ll, rr+1);
 }*/
 
+// Reverse Integer
+/*function reverse(num) {
+    let numm = Math.abs(num)  // 1230
+    numm = numm.toString().split('').reverse().join('')  // 0321
+    numm = (num < 0 ? -1 : 1) * numm
+    return numm < Math.pow(-2, 31) || numm > Math.pow(2, 31) - 1 ? 0 : numm
+}
+console.log(reverse(-1534236469));*/
 
+// String to Integer (atoi)
+/*const myAtoi = str => Math.max(Math.min(parseInt(str) || 0, 0x7fffffff), -0x80000000);
+console.log(myAtoi("-4193 with words"));*/
+
+// 
 
 
 
