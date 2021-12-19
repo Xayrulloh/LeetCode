@@ -761,6 +761,23 @@ console.log(isMatch('aa','a*'));*/
 }
 console.log(reverseWords("Let's take LeetCode contest"));*/
 
+// Nim Game
+/*function canWinNim(num) {
+    if (num <= 3) return true
+    return num % 4 == 0 ? false : true
+}
+console.log(canWinNim(1));*/
+
+// Power of Two
+/*function isPowerOfTwo(num) {
+    if (num === 1) return true
+    let numm = 2
+    while (numm < num) {
+        numm *= 2
+    }
+    return numm === num ? true : false
+}
+console.log(isPowerOfTwo(16));*/
 
 
 
