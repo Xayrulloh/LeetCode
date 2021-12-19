@@ -800,6 +800,19 @@ console.log(isPowerOfFour(16));*/
 }
 console.log(findTheDifference('abcd', 'abcde'));*/
 
+// Is Subsequence
+/*function isSubsequence(s, t) {
+    let simple = 0
+    for (let a = 0; a < t.length; a++) {
+        if (t[a] == s[simple]) {
+            ++simple
+        }
+    }
+    return simple == s.length ? true : false
+}
+console.log(isSubsequence("abc","ahbgdc"));*/
+
+
 
 
 
