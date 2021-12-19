@@ -779,6 +779,26 @@ console.log(canWinNim(1));*/
 }
 console.log(isPowerOfTwo(16));*/
 
+// Power of Four
+/*function isPowerOfFour(num) {
+    if (num === 1) return true
+    let numm = 4
+    while (numm < num) {
+        numm *= 4
+    }
+    return numm === num ? true : false
+}
+console.log(isPowerOfFour(16));*/
+
+// Find the Difference
+/*function findTheDifference(s, t) {
+    s = s.split('').sort()
+    t = t.split('').sort()
+    for (let a = 0; a < t.length; a++) {
+        if (t[a] != s[a]) return t[a]
+    }
+}
+console.log(findTheDifference('abcd', 'abcde'));*/
 
 
 
