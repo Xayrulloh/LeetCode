@@ -674,7 +674,7 @@ console.log(findMedianSortedArrays([2, 2, 4, 4], [2, 2, 4, 4]));*/
 /*function lengthOfLongestSubstring(str) {
     let res = []
     let result = ''
-    for (let a = 0; a < str. length; a++) {
+    for (let a = 0; a < str.length; a++) {
         let newstr = str[a]
         for (let b = a + 1; b < str. length; b++) {
             if (!newstr.includes(str[b])) newstr += str[b]
@@ -682,14 +682,63 @@ console.log(findMedianSortedArrays([2, 2, 4, 4], [2, 2, 4, 4]));*/
         }
         res.push(newstr)
     }
-    for (let a = 0; a < res. length; a++) {
+    for (let a = 0; a < res.length; a++) {
         if (result.length < res[a].length) result = res[a]
     }
     return result.length
 }
-console.log(lengthOfLongestSubstring("abcabcbb"));*/
+console.log(lengthOfLongestSubstring("abcabcdb"));*/
 
-// 
+// Longest Palindromic Substring
+/*function longestPalindrome(str) {  // mine
+    let res = []
+    let rev = ''
+    if (str.length === 1) return str
+    for (let a = 0; a < str.length; a++) {
+        let newstr = str[a]
+        for (let b = a + 1; b < str.length; b++) {
+            newstr += str[b]
+            rev = newstr.split('').reverse().join('')
+            if (newstr === rev) res.push(newstr)
+        }
+    }
+    for (let a = 1; a < res.length; a++) {
+        if (res[0].length < res[a].length) res[0] = res[a]
+    }
+    return res[0]
+}
+console.log(longestPalindrome("a"));*/
+
+/*function longestPalindrome(s) {  // copied
+  // ll: Left index of the longest palindrome.
+  // rr: Right index of the longest palindrome.
+  let ll = 0, rr = 0;
+
+  // Iterate all palindromes with center indices
+  // [..., i, ...] or [... i, i+1, ...]
+  for (let i = 0; i < s.length; i++) {
+    for (let j of [i, i+1]) {
+      for (l = i, r = j; s[l] && s[l] === s[r]; l--, r++)
+
+        // Found a new palindrome [l, ..., i, j, ..., r]
+        // Update the ll, rr if the newly found palindrome is longer than the
+        // existing one.
+        [ll, rr] = (r-l+1) > (rr-ll+1) ? [l, r] : [ll, rr];
+    }
+  }
+  return s.substring(ll, rr+1);
+}*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
