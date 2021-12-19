@@ -654,6 +654,11 @@ console.log(isAnagram("anagram", "nagaram"));*/
     delete temp
 }*/
 
+// Find All Numbers Disappeared in an Array
+/*let findDisappearedNumbers = (nums) => Array.from({length:nums.length}, (v,i) => i+1).filter(item => !nums.includes(item))  
+console.log(findDisappearedNumbers([4,3,2,7,8,2,3,1]));*/
+
+
 
 
 
