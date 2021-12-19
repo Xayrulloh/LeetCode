@@ -658,7 +658,38 @@ console.log(isAnagram("anagram", "nagaram"));*/
 /*let findDisappearedNumbers = (nums) => Array.from({length:nums.length}, (v,i) => i+1).filter(item => !nums.includes(item))  
 console.log(findDisappearedNumbers([4,3,2,7,8,2,3,1]));*/
 
+//  Median of Two Sorted Arrays
+/*function findMedianSortedArrays(arr1, arr2) {
+    arr1 = arr1.concat(arr2)
+    arr1.sort((a, b) => a > b ? 1 : -1) // 1, 2, 3, 4, 5, 6
+    console.log(arr1[arr1.length / 2], arr1[arr1.length / 2 - 1]);
+    if (arr1.length % 2 === 0) {
+        return ((arr1[arr1.length / 2] + arr1[arr1.length / 2 - 1]) / 2)
+    }
+    else return arr1[(arr1.length / 2) | 0]
+}
+console.log(findMedianSortedArrays([2, 2, 4, 4], [2, 2, 4, 4]));*/
 
+// Longest Substring Without Repeating Characters
+/*function lengthOfLongestSubstring(str) {
+    let res = []
+    let result = ''
+    for (let a = 0; a < str. length; a++) {
+        let newstr = str[a]
+        for (let b = a + 1; b < str. length; b++) {
+            if (!newstr.includes(str[b])) newstr += str[b]
+            else break
+        }
+        res.push(newstr)
+    }
+    for (let a = 0; a < res. length; a++) {
+        if (result.length < res[a].length) result = res[a]
+    }
+    return result.length
+}
+console.log(lengthOfLongestSubstring("abcabcbb"));*/
+
+// 
 
 
 
