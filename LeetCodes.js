@@ -742,7 +742,26 @@ console.log(reverse(-1534236469));*/
 /*const myAtoi = str => Math.max(Math.min(parseInt(str) || 0, 0x7fffffff), -0x80000000);
 console.log(myAtoi("-4193 with words"));*/
 
-// 
+// Regular Expression Matching
+/*function isMatch(s, p) {
+    const regex = new RegExp('^' + p + '$', 'm');
+    return regex.test(s);
+};
+console.log(isMatch('aa','a*'));*/
+
+// Reverse Words in a String III
+/*function reverseWords(str) {
+    let res = ''
+    str = str.split(' ')
+    for (const a of str) {
+        res += `${a.split('').reverse().join('')} `
+    }
+    res = res.slice(0, res.length - 1)
+    return res
+}
+console.log(reverseWords("Let's take LeetCode contest"));*/
+
+
 
 
 
