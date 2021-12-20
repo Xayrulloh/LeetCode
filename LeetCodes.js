@@ -812,9 +812,38 @@ console.log(findTheDifference('abcd', 'abcde'));*/
 }
 console.log(isSubsequence("abc","ahbgdc"));*/
 
+// Add Digits
+/*function addDigits(num) {
+    num = num.toString()
+    while (num.length > 1) {
+        let summ = 0
+        for (let a = 0; a < num.length; a++) {
+            summ += +num[a]
+        }
+        num = summ.toString()
+    }
+    return +num
+}
+console.log(addDigits(110));*/
 
-
-
+// Reverse Vowels of a String
+/*function reverseVowels(str) {
+    let count = 0
+    let res = ''
+    let vowel = ''
+    let rev = str.split('').reverse().join('')
+    for (let a = 0; a < rev.length; a++) {
+        if (rev[a] == 'a' || rev[a] == 'e' || rev[a] == 'i' || rev[a] == 'o' || rev[a] == 'u' || rev[a] == 'A' || rev[a] == 'E' || rev[a] == 'I' || rev[a] == 'O' || rev[a] == 'U') vowel += rev[a]
+    }
+    for (let a = 0; a < str.length; a++) {
+        if (str[a] == 'a' || str[a] == 'e' || str[a] == 'i' || str[a] == 'o' || str[a] == 'u' || str[a] == 'A' || str[a] == 'E' || str[a] == 'I' || str[a] == 'O' || str[a] == 'U') {
+            res += vowel[count]
+            count++
+        }else res += str[a]
+    }
+    return res
+}
+console.log(reverseVowels('aA'));*/
 
 
 
