@@ -845,6 +845,26 @@ console.log(addDigits(110));*/
 }
 console.log(reverseVowels('aA'));*/
 
+// Third Maximum Number
+/*function thirdMax(arr) {
+    arr = arr.sort((a, b) => a-b)
+    arr = new Set(arr)
+    arr = Array.from(arr)
+    if (arr.length < 3) return arr[arr.length-1]
+    return arr[arr.length-3]
+}
+console.log(thirdMax([2, 2, 3, 1]));*/
+
+// Add Strings
+/*function addStrings(num1, num2) {
+    num1 = BigInt(num1)
+    num2 = BigInt(num2)
+    let res = BigInt(num1 + num2)
+    return res.toString()
+}
+console.log(addStrings("9333852702227987","85731737104263"));*/
+
+
 
 
 
