@@ -864,7 +864,27 @@ console.log(thirdMax([2, 2, 3, 1]));*/
 }
 console.log(addStrings("9333852702227987","85731737104263"));*/
 
+// Number of Segments in a String
+/*function countSegments(str) {
+    return !str.trim() ? 0 : str.trim().replace(/\s+/g, ' ').split(" ").length  
+}
+console.log(countSegments("Tom fsfa fsadfsadf fsfasfsa           fjsfjioasf sfsa sf"));*/
 
+// Fibonacci Number
+/*function fib(num) {
+    let one = 0
+    let two = 1
+    let three = 0
+    if (num == 1) return 1
+    if (num == 2) return 1
+    for (let a = 1; a < num; a++) {
+        three = one + two
+        one = two
+        two = three
+    }
+    return three
+}
+console.log(fib(1));*/
 
 
 
