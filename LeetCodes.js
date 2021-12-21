@@ -977,7 +977,23 @@ console.log(intToRoman(1994));*/
 }
 console.log(rotateString("abcde","cdeab"));*/
 
+// Jewels and Stones
+/*let numJewelsInStones = (j, s) => {let count = 0; for (let a of s) {if (j.includes(a)) count++}; return count}
+console.log(numJewelsInStones('aAA', 'aAAbbb'));*/
 
+//  Largest Number At Least Twice of Others
+/*function dominantIndex(arr) {
+    let copied = [...arr]
+    copied = copied.sort((a, b) => a - b)
+    let big = copied[copied.length-1]
+    for (let a = copied.length - 2; a >= 0; a--) {
+        if (!(big / copied[a] >= 2)) return -1
+    }
+    return arr.indexOf(big)
+}
+console.log(dominantIndex([1]));*/
+
+// 
 
 
 
