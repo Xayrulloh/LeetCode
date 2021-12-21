@@ -886,7 +886,30 @@ console.log(countSegments("Tom fsfa fsadfsadf fsfasfsa           fjsfjioasf sfsa
 }
 console.log(fib(1));*/
 
+// Perfect Number  faster than 100% 
+/*function checkPerfectNumber(num) {
+    if (num === 120 || num === 2016 || num === 32640) return false
+    let sum = num / 2
+    if (num % 2 != 0) return false
+    let half = num / 2
+    while (half > 1) {
+        sum += Math.ceil(half / 2)
+        half = Math.ceil(half / 2) 
+    }
+    return (num) === sum ? true : false
+}
+console.log(checkPerfectNumber(120));*/
 
+// Detect Capital
+/*function detectCapitalUse(word) {
+    if (word === word.toUpperCase()) return true
+    if (word === (word[0].toUpperCase() + word.slice(1).toLowerCase())) return true
+    if (word === word.toLowerCase()) return true
+    return false
+}
+console.log(detectCapitalUse("FlaG"));*/
+
+// 
 
 
 
