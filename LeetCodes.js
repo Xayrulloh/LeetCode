@@ -909,7 +909,76 @@ console.log(checkPerfectNumber(120));*/
 }
 console.log(detectCapitalUse("FlaG"));*/
 
-// 
+// Integer to Roman
+/*function intToRoman(num) {
+    let res = ''
+    while (num >= 1000) {
+        num -= 1000
+        res += 'M'
+    }
+    while (num >= 900) {
+        num -= 900
+        res += 'CM'
+    }
+    while (num >= 500) {
+        num -= 500
+        res += 'D'
+    }
+    while (num >= 400) {
+        num -= 400
+        res += 'CD'
+    }
+    while (num >= 100) {
+        num -= 100
+        res += 'C'
+    }
+    while (num >= 90) {
+        num -= 90
+        res += 'XC'
+    }
+    while (num >= 50) {
+        num -= 50
+        res += 'L'
+    }
+    while (num >= 40) {
+        num -= 40
+        res += 'XL'
+    }
+    while (num >= 10) {
+        num -= 10
+        res += 'X'
+    }
+    while (num >= 9) {
+        num -= 9
+        res += 'IX'
+    }
+    while (num >= 5) {
+        num -= 5
+        res += 'V'
+    }
+    while (num >= 4) {
+        num -= 4
+        res += 'IV'
+    }
+    while (num >= 1) {
+        num -= 1
+        res += 'I'
+    }
+    return res
+}
+console.log(intToRoman(1994));*/
+
+// Rotate String
+/*function rotateString(s, goal) {
+    for (let a = 0; a < s.length; a++) {
+        if (goal === (s.slice(a) + s.slice(0, a))) return true
+    }
+    return false
+}
+console.log(rotateString("abcde","cdeab"));*/
+
+
+
 
 
 
