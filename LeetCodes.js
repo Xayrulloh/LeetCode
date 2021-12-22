@@ -993,7 +993,54 @@ console.log(numJewelsInStones('aAA', 'aAAbbb'));*/
 }
 console.log(dominantIndex([1]));*/
 
-// 
+//  Self Dividing Numbers
+/*function selfDividingNumbers(start, end) {
+    let a = 0
+    let sum = 0
+    let res = []
+    for (; start <= end; start++) {
+        if (start < 10) res.push(start)
+        else {
+            let copy = start.toString()
+            while (copy.length >= 1) {
+                if (start % (+copy[a]) === 0) sum++
+                copy = copy.slice(1)
+            }
+            if (sum === start.toString().length) res.push(start)
+            sum = 0
+        }
+    }
+    return res
+}
+console.log(selfDividingNumbers(1, 22));*/
+
+// To Lower Case
+/*let toLowerCase = (s) => s.toLowerCase()
+console.log(toLowerCase('HELLO'));*/
+
+// Baseball Game
+/*function calPoints(arr) {
+    let sum = 0
+    let result = []
+    for (let a = 0; a < arr.length; a++) {
+        if (arr[a] == Number(arr[a])) result.push(arr[a])
+        if (arr[a] === 'C') result.pop()
+        if (arr[a] === 'D') {
+            let add = result[result.length - 1] * 2
+            result.push(add)
+        }
+        if (arr[a] === '+') {
+            let add = Number(result[result.length - 1]) + Number(result[result.length - 2])
+            result.push(add)
+        }
+    }
+    for (let a = 0; a < result.length; a++) {
+        sum += +result[a]
+    }
+    return sum
+}
+console.log(calPoints(["5","2","C","D","+"]));*/
+
 
 
 
