@@ -1068,9 +1068,33 @@ console.log(validPalindrome('"fzauaqmktfxsyitbuexiypoiecuwqxfbjhdqzomgbtkihsnpcq
 }
 console.log(findLengthOfLCIS([1,3,5,4,2,3,4,5]));*/
 
+// Robot Return to Origin
+/*function judgeCircle(str) {
+    let rightleft = 0
+    let updown = 0
+    for (let a = 0; a < str.length; a++) {
+        if (str[a] === 'U') updown += 1
+        if (str[a] === 'D') updown -= 1
+        if (str[a] === 'L') rightleft += 1
+        if (str[a] === 'R') rightleft -= 1
+    }
+    return rightleft === 0 && updown === 0 ? true : false
+}
+console.log(judgeCircle('LL'));*/
 
-
-
+// Set Mismatch
+/*function findErrorNums(arr) {
+    arr.sort((a, b) => a - b)  // sort qivolindi
+    let para = 0  // 2 ta yonma yon kegan sonini topiwga
+    let missing = 1  // yoqolgan sonni topiwga
+    for (let a = 1; a < arr.length; a++) {  // arr aylantiriwga 1 cisidan bowlab cunki a - 1 qilingan, agar 0 dan boshlab a + 1 qlinsa oxirgisiga undefined didi
+        if (arr[a] == arr[a - 1]) para = arr[a]  //  2 ta teng bogan sonni topib para ga ozlawtiriladi
+        if (arr[a] > arr[a - 1] + 1) missing = arr[a - 1] + 1  // yoqolgan sonni topiladi
+    }
+    return [para, arr[arr.length - 1] == arr.length ? missing : arr.length]  // para bzasa aniq, arr oxirgi elementi teng bosa arr lengthiga, yani qanaqangi taxlanganini biliwga, yani 1, 2, 3 bosa yoqolgan sonni qoyadi, agar 3, 2, 1 bosa arr lengthi 
+}
+console.log(findErrorNums([3, 2, 2]));*/
+    
 
 
 
