@@ -1041,6 +1041,33 @@ console.log(toLowerCase('HELLO'));*/
 }
 console.log(calPoints(["5","2","C","D","+"]));*/
 
+// Valid Palindrome II time limited
+/*function validPalindrome(str) {
+    if (str === str.split('').reverse().join('')) return true
+    for (let a = 0; a < str.length; a++) {
+        let copy = str.slice(0, a) + str.slice(a + 1)
+        if (copy === copy.split('').reverse().join('')) return true
+    }
+    return false
+}
+console.log(validPalindrome('"fzauaqmktfxsyitbuexiypoiecuwqxfbjhdqzomgbtkihsnpcqfmeplcwfhygrysdundqmsnoaovtdjngnsdmfqvrnmpdevsgzcpokthoiniufmnsymcujpadmsylsqcqbnustclqmcfwftkhrommdmkafnrmvzcrygdmqdjqdqdnylcjmoisctqeiouheixirszpytcuphfebuawndagyaqimigxckkvhxcssptyjfubgpcxanugzvkrowlwwptqlbhrwxjgfkercvkbrqrytrfazqpgmuvpuukweiadcdinixhwcolrdmlqoqvagumyfferzlubuvaucfvwkurfpinvacdgdwwnhdkvqazlspelmyddjjsktaghrxnpjftseugwsnqqwjhdsqvswafkllnfxlfebzkpwpbniqussmluenwtpvtfcsbfzkqyqtnhtftgvlijyymgdldilkusvxwxqyvdmggitskzjzszowxjkhbnvjhndnyyidgzxqsvoqfmnjdqjfhulvenshqpxkrulfuwxlhzpcpksubrymurgwejqsthtandlkxvouoqmccvrwrgropdppgysoqhhcwavhujqxbftiyueahcqjjijvkbyieinimfhrdduizpeivggrtroqhpfmlikrcdwhfqrhxteoshdlbhqvqqjkpueuhqnftbaphssqerfnozlxzkureotkwzoakiczknfjxeuewkdxaxisbbjvyadpyfgckirgzaigwhnmmgxkajehwvaamocnqpzmcgwrvrpioyspveipkcklgovdwkgbltiptvnwsseqtfkcciueiuozynnrlaobzuxnoygshnpskfkvnitgipqolzvvsisfdgpiqqjfrirapxenqsvkenhykksuhajotmwycsazwppqmychpeyklwkaahxnudsltwwlvekoqavcdtpajelzlwmrepfuiukfxlftofisecacfjbngsjjxydyldzroorzdlydyxjjsgnbjfcacesifotflxfkuiufpermwlzlejaptdcvaqokevlwwtlsdunxhaakwlkyephcymqppwzascywmtojahuskkyhnekvsqnexparirfjqqipgdfsisvvzloqpigtinvkfkspnhsgyonxuzboalrnnyzouieuicckftqesswnvtpitlbgkwdvoglkckpievpsyoiprvrwgcmzpqncomaavwhejakxgmmnhwgiazgrikcgfypdayvjbbsixaxdkweuexjfnkzcikaozwktoerukzxlzonfreqsshpabtfnqhueupkjqqvqhbldhsoetxhrqfhwdcrkilmfphqortrggviepziuddrhfminieiybkvjijjqchaeuyitfbxqjuhvawchhqosygppdporgrwrvccmqouovxkldnathtsqjewgrumyrbuskpcpzhlxwuflurkxpqhsnevluhfjqdjnmfqovsqxzgdiyyndnhjvnbhkjxwozszjzkstiggmdvyqxwxvsuklidldgmyyjilvgtfthntqyqkzfbscftvptwneulmssuqinbpwpkzbeflxfnllkfawsvqsdhjwqqnswguestfjpnxrhgatksjjddymlepslzaqvkdhnwwdgdcavnipfrukwvfcuavubulzreffymugavqoqlmdrlocwhxinidcdaiewkuupvumgpqzafrtyrqrbkvcrekfgjxwrhblqtpwwlworkvzgunaxcpgbufjytpsscxhvkkcxgimiqaygadnwaubefhpuctypzsrixiehuoieqtcsiomjclyndqdqjdqmdgyrczvmcrnfakmdmmorhktfwfcmqlctsunbqcqslysmdapjucmysnmfuiniohtkopczgsvedpmnqrvqfmdsngnjdtvoaonsmqdnudsyrgyhfwclpemfqcpnshiktbgmozqdhjbfxqwuceiopyixeubtiysxftkmqauazf"'));*/
+
+// Longest Continuous Increasing Subsequence
+/*function findLengthOfLCIS(arr) {
+    let res = []
+    let sum = 1
+    for (let a = 1; a < arr.length; a++) {
+        if (arr[a] > arr[a - 1]) sum++
+        else {
+            res.push(sum)
+            sum = 1
+        }
+    }
+    res.push(sum)
+    return res.sort((a, b) => a - b)[res.length - 1]
+}
+console.log(findLengthOfLCIS([1,3,5,4,2,3,4,5]));*/
+
 
 
 
