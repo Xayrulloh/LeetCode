@@ -1095,6 +1095,30 @@ console.log(judgeCircle('LL'));*/
 }
 console.log(findErrorNums([3, 2, 2]));*/
     
+// Maximum Average Subarray I
+/*function findMaxAverage(arr, k) {
+    let res = []
+    let sum = 0
+    for (let a = 0; a < arr.length - k + 1; a++) {
+        for (let b = a; b < a + k; b++) {
+            sum += arr[b]
+        }
+        res.push(sum)
+        sum = 0
+    }
+    return Math.max(...res) / k
+}
+console.log(findMaxAverage([5], 1));*/
+
+// Distribute Candies
+/*let distributeCandies = (arr) => Math.min(new Set(arr).size, arr.length / 2)
+console.log(distributeCandies([1, 1, 2, 2, 3, 3]));*/
+
+
+
+
+
+
 
 
 
