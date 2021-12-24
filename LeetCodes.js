@@ -1187,6 +1187,28 @@ console.log(checkRecord("PPALLL"));*/
 }
 console.log(canConstruct("a","b"));*/
 
+// Longest Palindrome
+/*function longestPalindrome(str) {
+    let res = 0
+    let obj = {}
+    for (let a of str) {
+        if (obj[a]) {
+            delete obj[a]
+            res++
+        }
+        else obj[a] = 1
+    }
+    return res * 2 + (Object.keys(obj).length >= 1 ? 1 : 0)
+}
+console.log(longestPalindrome("abccccdd"));*/
+
+// Repeated Substring Pattern
+/*let repeatedSubstringPattern = (str) => (str + str).substring(1,str.length*2-1).includes(str) ? true : false
+console.log(repeatedSubstringPattern("abcabcabcabc"));*/
+
+
+
+
 
 
 
