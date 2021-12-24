@@ -1162,9 +1162,30 @@ console.log(findWords(["Hello","Alaska","Dad","Peace"]));*/
     return res
 };*/
 
+// Student Attendance Record I
+/*function checkRecord(s) {
+    let l = 0
+    let A = 0
+    if (s.includes('LLL')) return false
+    for (const a of s) {
+        if (a === 'A') A++
+        if (A > 1) return false
+    }
+    return true
+}
+console.log(checkRecord("PPALLL"));*/
 
-
-
+// Ransom Note
+/*function canConstruct(ransomNote, magazine) {
+    let arr = [...magazine]
+    for (let a of ransomNote) {
+        let index = arr.indexOf(a)
+        if (index < 0) return false
+        arr.splice(index, 1)
+    }
+    return true
+}
+console.log(canConstruct("a","b"));*/
 
 
 
