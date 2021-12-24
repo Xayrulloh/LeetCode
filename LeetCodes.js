@@ -1114,8 +1114,53 @@ console.log(findMaxAverage([5], 1));*/
 /*let distributeCandies = (arr) => Math.min(new Set(arr).size, arr.length / 2)
 console.log(distributeCandies([1, 1, 2, 2, 3, 3]));*/
 
+// Keyboard Row
+/*function findWords(arr) {
+    let res = []
+    let check = true
+    for (const a of arr) {
+        if ('qwertyuiop'.includes(a[0].toLowerCase())) {
+            for (let b of a) {
+                if (!'qwertyuiop'.includes(b.toLowerCase())) check = false
+            }
+            if (check === true) res.push(a)
+            check = true
+        }
+        if ('asdfghjkl'.includes(a[0].toLowerCase())) {
+            for (let b of a) {
+                if (!'asdfghjkl'.includes(b.toLowerCase())) check = false
+            }
+            if (check === true) res.push(a)
+            check = true
+        }
+        if ('zxcvbnm'.includes(a[0].toLowerCase())) {
+            for (let b of a) {
+                if (!'zxcvbnm'.includes(b.toLowerCase())) check = false
+            }
+            if (check === true) res.push(a)
+            check = true
+        }
+    }
+    return res
+}
+console.log(findWords(["Hello","Alaska","Dad","Peace"]));*/
 
-
+// Reverse String II
+/*function reverseStr(s, k) {
+    let res = ''
+    let check = true
+    for (let a = 0; a < s.length; a += k) {
+        if (check) {
+            res += s.slice(a, a + k).split('').reverse().join('')
+            check = false
+        }
+        else {
+            res += s.slice(a, a + k)
+            check = true
+        }
+    }
+    return res
+};*/
 
 
 
