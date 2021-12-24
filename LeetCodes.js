@@ -1206,7 +1206,24 @@ console.log(longestPalindrome("abccccdd"));*/
 /*let repeatedSubstringPattern = (str) => (str + str).substring(1,str.length*2-1).includes(str) ? true : false
 console.log(repeatedSubstringPattern("abcabcabcabc"));*/
 
+// Longest Uncommon Subsequence I
+/*let findLUSlength = (str, str2) => str === str2 ? (-1) : Math.max(str.length, str2.length)
+console.log(findLUSlength("aefawfawfawfaw","aefawfeawfwafwaef"));*/
 
+// Adding Spaces to a String
+/*function addSpaces(str, space) {
+    let res = ''
+    let count = 0
+    for (let a = 0; a < str.length; a++) {
+        if (a === space[count]) {
+            res += ' '
+            count++
+        }
+        res += str[a]
+    }
+    return res
+}
+console.log(addSpaces('LeetcodeHelpsMeLearn', [8, 13, 15]));*/
 
 
 
