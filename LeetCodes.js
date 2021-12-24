@@ -1225,6 +1225,41 @@ console.log(findLUSlength("aefawfawfawfaw","aefawfeawfwafwaef"));*/
 }
 console.log(addSpaces('LeetcodeHelpsMeLearn', [8, 13, 15]));*/
 
+// Merge Intervals
+/*function merge(arr) {
+    if (arr.length < 2) return arr
+    arr.sort((a, b) => a[0] - b[0])
+    let result = []
+    let simple = arr[0]
+    for (let a = 1; a < arr.length; a++) {
+        if (simple[1] >= arr[a][0]) {
+            simple = [simple[0], Math.max(simple[1], arr[a][1])]
+        }
+        else {
+            result.push(simple)
+            simple = arr[a]
+        }
+    }
+    result.push(simple)
+    return result
+}
+console.log(merge([[1,4],[0,2],[3,5]]));*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
