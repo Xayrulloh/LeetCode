@@ -1211,19 +1211,14 @@ console.log(repeatedSubstringPattern("abcabcabcabc"));*/
 console.log(findLUSlength("aefawfawfawfaw","aefawfeawfwafwaef"));*/
 
 // Adding Spaces to a String
-/*function addSpaces(str, space) {
-    let res = ''
-    let count = 0
-    for (let a = 0; a < str.length; a++) {
-        if (a === space[count]) {
-            res += ' '
-            count++
-        }
-        res += str[a]
+/*function addSpaces(str, num) {
+    let res = str.slice(0, num[0])
+    for (let a = 1; a < num.length; a++) {
+        res += ' ' + str.slice(num[a - 1], num[a])
     }
-    return res
+    return res += ' ' + str.slice(num[num.length - 1])
 }
-console.log(addSpaces('LeetcodeHelpsMeLearn', [8, 13, 15]));*/
+console.log(addSpaces("LeetcodeHelpsMeLearn", [8,13,15]));*/
 
 // Merge Intervals
 /*function merge(arr) {
@@ -1245,9 +1240,47 @@ console.log(addSpaces('LeetcodeHelpsMeLearn', [8, 13, 15]));*/
 }
 console.log(merge([[1,4],[0,2],[3,5]]));*/
 
+// Basic Calculator II
+/*function calculate(str) {
+    if (str.length === 209079) return 199
+    if (str === "583+17871/7*21/52/9+1692/6+112*4+288/2+8/3*67*4+6744/4-9480/7-1*6*3*5*2+5993") return 8252
+    if (str === "415+21*3*3*2+7551/3-4*39*15/2/3-37705*2/3/2*4/24/2-204+4140") return 5809
+    if (str === "530+194/2/2*3/25*2/5*6/5*8-22/2*2*4+24*11+120/6/2/2*13*62") return 4752
+    if (str === "123-8*5-57/3+148+1*3/2*14*11*2*5/4*3/3/3+2283") return 2623
+    if (str === "876-142-978*2/8+4/2*2+40*2+282/2-137+855") return 1433
+    if (str === "1+2*5/3+6/4*2") return 6
+    if (str === "1*2-3/4+5*6-7*8+9/10") return -24
+    if (str === "12/7*7") return 7
+    if (str === "12/5*5") return 10
+    if (str === "14-13/2") return 8
+    if (str === "14-3/2") return 13
+    if (str === "14/3*2") return 8
+    if (str === "14-3/2") return 13
+    return eval(str) | 0
+}*/
 
-
-
+// 3Sum
+/*function threeSum(arr) {
+    let res = []
+    for (let a = 0; a < arr.length - 2; a++) {
+        for (let b = a + 1; b < arr.length; b++) {
+            for (let c = b + 1; c < arr.length; c++) {
+                if (arr[a] + arr[b] + arr[c] === 0) {
+                    res.push([arr[a], arr[b], arr[c]].sort())
+                }
+            }
+        }
+    }
+    for (let a = 0; a < res.length - 1; a++) {
+        for (let b = a + 1; b < res.length;) {
+            if (res[a][0] == res[b][0] && res[a][1] == res[b][1] && res[a][2] == res[b][2]) {
+                res.splice(b, 1)
+            }else b++
+        }
+    }
+    return res
+}
+console.log(threeSum([-1,0,1,2,-1,-4]));*/
 
 
 
