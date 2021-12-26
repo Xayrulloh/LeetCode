@@ -1282,7 +1282,28 @@ console.log(merge([[1,4],[0,2],[3,5]]));*/
 }
 console.log(threeSum([-1,0,1,2,-1,-4]));*/
 
+// Ugly Number
+/*function isUgly(num) {
+    let arr = [2, 3, 5]
+    for (let a = 0; a < arr.length; a++) {
+        while (num && num % arr[a] === 0) num = num / arr[a] | 0
+    }
+    return num === 1
+}
+console.log(isUgly(6));*/
 
+// Can Place Flowers
+/*function canPlaceFlowers(arr, num) {
+    for (let a = 0; a < arr.length; a++) {
+        if (!arr[a - 1] && !arr[a] && !arr[a + 1]) {
+            arr[a] = 1
+            num--
+            if (num === 0) return true
+        }
+    }
+    return false
+}
+console.log(canPlaceFlowers([1, 0, 0, 0, 1], 2));*/
 
 
 
