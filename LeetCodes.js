@@ -1294,18 +1294,34 @@ console.log(isUgly(6));*/
 
 // Can Place Flowers
 /*function canPlaceFlowers(arr, num) {
+    if (arr[0] === 0 && arr[1] === 0) {arr[0] = 1; num--}
+    if (arr[arr.length - 1] === 0 && arr[arr.length - 2] === 0) {arr[arr.length - 1] = 1; num--}
     for (let a = 0; a < arr.length; a++) {
         if (!arr[a - 1] && !arr[a] && !arr[a + 1]) {
             arr[a] = 1
             num--
-            if (num === 0) return true
         }
     }
-    return false
+    return num <= 0
 }
-console.log(canPlaceFlowers([1, 0, 0, 0, 1], 2));*/
+console.log(canPlaceFlowers([0,0,1,0,0], 1));*/
 
+// Maximum Product of Three Numbers
+/*function maximumProduct(nums) {
+    nums = nums.sort((a, b) => a - b)
+    return Math.max(nums[0] * nums[1] * nums[nums.length - 1], nums[nums.length - 1] * nums[nums.length - 2] * nums[nums.length - 3])
+}
+console.log(maximumProduct([1,2,3,4]));*/
 
+// Find Smallest Letter Greater Than Target
+/*function nextGreatestLetter(arr, str) {
+    arr.push(str)
+    arr = Array.from(new Set(arr.sort()))
+    return arr[arr.indexOf(str) + 1] ? arr[arr.indexOf(str) + 1] : arr[0]
+}
+console.log(nextGreatestLetter(['a', 'b'],"z"));*/
+
+// 
 
 
 
