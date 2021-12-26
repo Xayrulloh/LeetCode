@@ -1321,8 +1321,19 @@ console.log(maximumProduct([1,2,3,4]));*/
 }
 console.log(nextGreatestLetter(['a', 'b'],"z"));*/
 
-// 
+//  Min Cost Climbing Stairs
+/*function minCostClimbingStairs(arr, num) {
+    for (let a = arr.length - 3; ~a; a--) {
+        arr[a] += Math.min(arr[a + 1], arr[a + 2])
+    }
+    return Math.min(arr[0], arr[1])
+}
+console.log(minCostClimbingStairs([10,15,20], 15));*/
 
+// A Number After a Double Reversal
+/*let isSameAfterReversals = (num) => {if (num === 0) return true; return num % 10 ? true : false}*/
+
+// 
 
 
 
