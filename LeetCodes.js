@@ -1333,13 +1333,37 @@ console.log(minCostClimbingStairs([10,15,20], 15));*/
 // A Number After a Double Reversal
 /*let isSameAfterReversals = (num) => {if (num === 0) return true; return num % 10 ? true : false}*/
 
-// 
+// Unique Morse Code Words
+/*const alphabet = {
+    a: '.-', b: '-...',   c: '-.-.', d: '-..', e: '.', f: '..-.', g: '--.', h: '....', i: '..',  j: '.---',  k: '-.-',  l: '.-..', m: '--',
+    n: '-.',  o: '---', p: '.--.',  q: '--.-',  r: '.-.', s: '...', t: '-', u: '..-', v: '...-', w: '.--', x: '-..-',  y: '-.--', z: '--..' 
+}
+let uniqueMorseRepresentations = words => new Set(words.map(word => word.split('').map(letter => alphabet[letter]).join(''))).size
+console.log(uniqueMorseRepresentations(["gin","zen","gig","msg"]));*/
 
-
-
-
-
-
+// Most Common Word
+/*function mostCommonWord(paragraph, banned) {
+    const bannedSet = new Set(banned)
+    const words = paragraph.toLowerCase().split(/\W+/)
+    const map = {}
+    for (const w of words) {
+        if (!bannedSet.has(w)) {
+            if (map[w] == null) map[w] = 0
+            map[w]++
+        }
+    }
+    let res = ''
+    let max = -Infinity
+    for (const w in map) {
+        const count = map[w]
+        if (count > max) {
+            res = w
+            max = count
+        }
+    }
+    return res
+}
+console.log(mostCommonWord("Bob. hIt, baLl", ["bob", "hit"]));*/
 
 
 
