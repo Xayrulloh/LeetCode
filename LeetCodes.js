@@ -1391,9 +1391,34 @@ console.log(shortestToChar("loveleetcode","e"));*/
 }
 console.log(toGoatLatin("I speak Goat Latin"));*/
 
+// Positions of Large Groups
+/*function largeGroupPositions(str) {
+    let res = [], start, count = 0
+    for (let a = 0; a < str.length; a++) {
+        if (count === 0) start = a
+        count++
+        if (str[a] !== str[a + 1] && count >= 3) res.push([start, a])
+        if (str[a] !== str[a + 1]) count = 0
+    }
+    return res
+}
+console.log(largeGroupPositions("abbxxxxzzy"));*/
 
-
-
+// Backspace String Compare
+/*function backspaceCompare(str, str2) {
+    return helper(str) == helper(str2)
+}
+function helper(input) {
+    let stack = []
+    for (let a of input) {
+        if (a !== '#') {
+            stack.push(a)
+        }
+        if (a == '#' && stack.length > 0) stack.pop()
+    }
+    return stack.join('')
+}
+console.log(backspaceCompare("bxj##tw", "bxo#j##tw"));*/
 
 
 
