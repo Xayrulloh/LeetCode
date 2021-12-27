@@ -1420,7 +1420,37 @@ function helper(input) {
 }
 console.log(backspaceCompare("bxj##tw", "bxo#j##tw"));*/
 
+// Peak Index in a Mountain Array
+/*function peakIndexInMountainArray(arr) {
+    for (let a = 1; a < arr.length; a++) {
+        let sum = 0
+        for (let b = 0; b < arr.length; b++) {
+            if (arr[a] >= arr[b]) sum++
+            if (sum === arr.length) return a
+        }
+    }
+}
+console.log(peakIndexInMountainArray([0,1,0]));*/
 
+// Buddy Strings
+/*function buddyStrings(str, goal) {
+    if (str.length !== goal.length) return false
+    let set = new Set()
+    let res = []
+    for (let a = 0; a < str.length; a++) {
+        if (res.length > 2) return false
+        if (str[a] !== goal[a]) res.push(a)
+        if (!set.has(str[a])) set.add(str[a])
+    }
+    if (res.length === 0) {
+        if (str.length === set.size) return false
+        else return true
+    }
+    if (res.length !== 2) return false
+    if (str[res[0]] === goal[res[1]] && str[res[1]] === goal[res[0]]) return true
+    return false
+}
+console.log(buddyStrings("ab","ba"));*/
 
 
 
