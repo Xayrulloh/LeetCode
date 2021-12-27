@@ -1365,6 +1365,44 @@ console.log(uniqueMorseRepresentations(["gin","zen","gig","msg"]));*/
 }
 console.log(mostCommonWord("Bob. hIt, baLl", ["bob", "hit"]));*/
 
+// Shortest Distance to a Character
+/*function shortestToChar(str, word) {
+    let len = str.length, ans = new Uint16Array(len)
+    ans[0] = str.charAt(0) === word ? 0 : 10001
+    for (let a = 1; a < len; a++) ans[a] = str.charAt(a) === word ? 0 : ans[a - 1] + 1
+    for (let a = len - 2; ~a; a--) ans[a] = Math.min(ans[a], ans[a + 1] + 1)
+    return ans
+}
+console.log(shortestToChar("loveleetcode","e"));*/
+
+// Goat Latin
+/*function toGoatLatin(str) {
+    let res = ''
+    str = str.split(' ')
+    for (let a = 0; a < str.length; a++) {
+        if ('aeiouAEIOU'.includes(str[a][0])) {
+            res += str[a] + "ma" + "a".repeat(a + 1) + ' ';
+        }
+        else {
+            res += str[a].slice(1) + str[a][0] + 'ma' + 'a'.repeat(a + 1) + ' '
+        }
+    }
+    return res.slice(0, -1)
+}
+console.log(toGoatLatin("I speak Goat Latin"));*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
