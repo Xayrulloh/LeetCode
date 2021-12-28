@@ -1452,8 +1452,53 @@ console.log(peakIndexInMountainArray([0,1,0]));*/
 }
 console.log(buddyStrings("ab","ba"));*/
 
+// Lemonade Change
+/*function lemonadeChange(bills) {
+    let fives = []
+    let tens = []
+    let twenty = []
+    for (let a = 0; a < bills.length; a++) {
+        if (bills[a] === 5) fives.push(bills[a])
+        if (bills[a] === 10) {
+            if (fives.length !== 0) {
+                tens.push(bills[a])
+                fives.pop()
+            }
+            else return false
+        }
+        if (bills[a] === 20) {
+            if (fives.length !== 0 && tens.length !==0) {
+                twenty.push(bills[a])
+                tens.pop()
+                fives.pop()
+                continue
+            }
+            if (tens.length === 0 && fives.length >= 3) {
+                twenty.push(bills[a])
+                fives.pop()
+                fives.pop()
+                fives.pop()
+            }
+            else return false
+        }
+    }
+    return true
+}
+console.log(lemonadeChange([5,5,5,10,20]));*/
 
-
+// Transpose Matrix
+/*function transpose(arr) {
+    let res = []
+    for (let b = 0; b < arr[0].length; b++) {
+        let simple = []
+        for (let a = 0; a < arr.length; a++) {
+            simple.push(arr[a][b])
+        }
+        res.push(simple)
+    }
+    return res
+}
+console.log(transpose([[1,2,3],[4,5,6],[7,8,9]]));*/
 
 
 
