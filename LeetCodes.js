@@ -1521,6 +1521,29 @@ console.log(uncommonFromSentences("apple apple", "banana"));*/
 /*let sortArrayByParity = (arr) => arr.sort((a, b) => a % 2 - b % 2)
 console.log(sortArrayByParity([3, 1, 2, 4]));*/
 
+// Reverse Only Letters  i need repair this
+/*function reverseOnlyLetters(str) {  
+    str = str.split('')
+    let res = []
+    for (let a = 0, b = str.length - 1; a < str.length;) {
+        if (str[b] === '-' && str[b] === /\[1-9]/) {b--; continue}
+        if (str[a] !== '-' && str[b] !== /\[1-9]/) {res.push(str[b]); a++; b--}
+        if (str[a] === '-' && str[b] === /\[1-9]/) {res.push(str[a]); a++;}
+    }
+    return res.join('')
+}
+console.log(reverseOnlyLetters("Test1ng-Leet=code-Q!"));*/
+
+// Sort Array By Parity II
+/*function sortArrayByParityII(arr) {
+    arr = arr.sort((a, b) => a % 2 - b % 2)
+    let res = []
+    for (let a = 0, b = arr.length / 2; a < arr.length / 2; a++, b++) {
+        res.push(arr[a], arr[b])
+    }
+    return res
+}
+console.log(sortArrayByParityII([4, 1, 2, 1]));*/
 
 
 
