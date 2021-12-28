@@ -1545,7 +1545,23 @@ console.log(reverseOnlyLetters("Test1ng-Leet=code-Q!"));*/
 }
 console.log(sortArrayByParityII([4, 1, 2, 1]));*/
 
+// Long Pressed Name
+/*function isLongPressedName(name, typed) {
+    let simple = 0
+    for (let a = 0; a < typed.length; a++) {
+        const currlet = name[simple]
+        if (currlet === typed[a] && currlet === name[simple + 1]) {
+            simple++
+            continue
+        }
+        if (currlet === typed[a] && currlet === typed[a + 1]) continue
+        if (currlet === typed[a]) simple++
+        if (currlet !== typed[a]) return false
+    }
+    return simple === name.length
+}
+console.log(isLongPressedName("saeed", "ssaaedd"));*/
 
-
+// 
 
 
