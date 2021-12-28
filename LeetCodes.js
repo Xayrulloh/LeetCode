@@ -1500,7 +1500,26 @@ console.log(lemonadeChange([5,5,5,10,20]));*/
 }
 console.log(transpose([[1,2,3],[4,5,6],[7,8,9]]));*/
 
+// Uncommon Words from Two Sentences
+/*function uncommonFromSentences(str, str2) {
+    let res = []
+    let newstr = str + ' ' + str2
+    newstr = newstr.split(' ')
+    for (let a = 0; a < newstr.length; a++) {
+        let count = 0
+        for (let b = 0; b < newstr.length; b++) {
+            if (a === b) continue
+            if (newstr[a] !== newstr[b]) count++
+        }
+        if (count === newstr.length - 1) res.push(newstr[a])
+    }
+    return res
+}
+console.log(uncommonFromSentences("apple apple", "banana"));*/
 
+// Sort Array By Parity
+/*let sortArrayByParity = (arr) => arr.sort((a, b) => a % 2 - b % 2)
+console.log(sortArrayByParity([3, 1, 2, 4]));*/
 
 
 
