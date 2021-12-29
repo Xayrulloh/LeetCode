@@ -1562,6 +1562,59 @@ console.log(sortArrayByParityII([4, 1, 2, 1]));*/
 }
 console.log(isLongPressedName("saeed", "ssaaedd"));*/
 
-// 
+// Valid Mountain Array
+/*function validMountainArray(arr) {
+    if (arr.length <= 2) return false
+    for (let a = 1; a < arr.length; a++) {
+        if (arr[a - 1] >= arr[a]) return false
+        if (arr[a] > arr[a - 1] && arr[a] > arr[a + 1]) {
+            for (let b = a; b < arr.length - 1; b++) {
+                if (arr[b] <= arr[b + 1]) return false
+            }
+            return true
+        }
+    }
+    return false
+}
+console.log(validMountainArray([0,3,2,1]));*/
+
+// DI String Match
+/*function diStringMatch(str) {
+    let l = 0, r = str.length, res = []
+    for (const a of str) {
+        if (a === 'I') {res.push(l); l++}
+        else {res.push(r); r--}
+    }
+    str[str.length - 1] == 'I' ? res.push(l) : res.push(r)
+    return res
+}
+console.log(diStringMatch("IDID"));*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
