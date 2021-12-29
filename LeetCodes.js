@@ -1590,7 +1590,38 @@ console.log(validMountainArray([0,3,2,1]));*/
 }
 console.log(diStringMatch("IDID"));*/
 
+// Delete Columns to Make Sorted
+/*function minDeletionSize(arr) {
+    let res = 0
+    for (let a = 0; a < arr[0].length; a++) {
+        let str = ''
+        for (let b = 0; b < arr.length; b++) {
+            str += arr[b][a]
+        }
+        if (str !== str.split('').sort().join('')) res++
+    }
+    return res
+}
+console.log(minDeletionSize(['a', 'b']));*/
 
+// N-Repeated Element in Size 2N Array
+/*function repeatedNTimes(arr) {
+    let obj = {}
+    for (const a of arr) {
+        obj[a] = obj[a] ? obj[a] + 1 : obj[a] = 1
+    }
+    let count = -Infinity
+    let res = {}
+    for (let key in obj) {
+        if (obj[key] > count) {
+            res = {}
+            res[key] = obj[key]
+            count = obj[key]
+        }
+    }
+    return Number(Object.keys(res))
+}
+console.log(repeatedNTimes([2,1,2,5,3,2]));*/
 
 
 
