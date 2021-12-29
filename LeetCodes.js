@@ -1641,7 +1641,59 @@ console.log(largestPerimeter([2,1,2]));*/
 }
 console.log(sortedSquares([-4,-1,0,3,10]));*/
 
+// Add to Array-Form of Integer
+/*function addToArrayForm(arr, num) {
+    num = BigInt(num)
+    let res = []
+    arr = BigInt(arr.join(''))
+    arr += num
+    arr += ''
+    for (const a of arr) {
+        res.push(+a)
+    }
+    return res
+}
+console.log(addToArrayForm([1,2,6,3,0,7,1,7,1,9,7,5,6,6,4,4,0,0,6,3], 516));*/
 
+// Available Captures for Rook
+/*function numRookCaptures(arr) {
+    let check = false
+    let res = 0
+    let R = []
+    for (let a = 0; a < arr.length; a++) {
+        for (let b = 0; b < arr[a].length; b++) {
+            if (arr[a][b] === 'R') {
+                R.push(a, b)
+            }
+        }
+    }
+    for (let a = R[0]; a >= 0; a--) {  // tepaga 
+        if (arr[a][R[1]] === 'B') break
+        if (arr[a][R[1]] === "p") {check = true; break}
+    }
+    if (check === true) {check = false; res++;}
+    
+    for (let a = R[0]; a < arr.length; a++) {  // pasga
+        if (arr[a][R[1]] === 'B') break
+        if (arr[a][R[1]] === "p") {check = true; break}
+    }
+    if (check === true) {check = false; res++}
+    
+    for (let a = R[1]; a >= 0; a--) {  //  chapga yurgamman
+        if (arr[R[0]][a] === 'B') break
+        if (arr[R[0]][a] === 'p') {check = true; break}
+    }
+    if (check === true) {check = false; res++}
+
+    for (let a = R[1]; a < arr[R[0]].length; a++) {  // onga yurgamman
+        if (arr[R[0]][a] === 'B') break
+        if (arr[R[0]][a] === 'p') {check = true; break}
+    }
+    if (check === true) {check = false; res++}
+
+    return res
+}
+console.log(numRookCaptures([[".",".",".",".",".",".",".","."],[".",".",".","p",".",".",".","."],[".",".",".","R",".",".",".","p"],[".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".","."],[".",".",".","p",".",".",".","."],[".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".","."]]));*/
 
 
 
