@@ -1623,9 +1623,23 @@ console.log(minDeletionSize(['a', 'b']));*/
 }
 console.log(repeatedNTimes([2,1,2,5,3,2]));*/
 
+// Largest Perimeter Triangle
+/*function largestPerimeter(arr) {
+    arr = arr.sort((a, b) => a - b)
+    for (let a = arr.length - 3; a >= 0; a--) {
+        if (arr[a] + arr[a + 1] > arr[a + 2]) return arr[a] + arr[a + 1] + arr[a + 2]
+    }
+    return 0
+}
+console.log(largestPerimeter([2,1,2]));*/
 
-
-
+// Squares of a Sorted Array
+/*function sortedSquares(arr) {
+    let res = []
+    arr.forEach(a => res.push(a**2));
+    return res.sort((a, b) => a - b)
+}
+console.log(sortedSquares([-4,-1,0,3,10]));*/
 
 
 
