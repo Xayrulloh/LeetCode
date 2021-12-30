@@ -1740,7 +1740,23 @@ console.log(largestSumAfterKNegations([2,-3,-1,5,-4], 2));*/
 }
 console.log(canThreePartsEqualSum([3,3,6,5,-2,2,5,1,-9,4]));*/
 
+// Last Stone Weight
+/*function lastStoneWeight(arr) {
+    let max1, max2
+    while (arr.length > 1) {
+        max1 = Math.max(...arr)
+        arr.splice(arr.indexOf(max1), 1)
+        max2 = Math.max(...arr)
+        arr.splice(arr.indexOf(max2), 1)
+        if (max1 - max2 != 0) arr.push(max1 - max2)
+    }
+    return Number(arr)
+}
+console.log(lastStoneWeight([1]));*/
 
+// Remove All Adjacent Duplicates In String
+/*let removeDuplicates = (str, res = []) => {str.split('').forEach(element => element !== res[res.length - 1] ? res.push(element) : res.pop()); return res.join('')}
+console.log(removeDuplicates("abbaca"));*/
 
 
 
