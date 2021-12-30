@@ -1714,6 +1714,33 @@ console.log(numRookCaptures([[".",".",".",".",".",".",".","."],[".",".",".","p",
 }
 console.log(commonChars(["cool","lock","cook"]));*/
 
+// Maximize Sum Of Array After K Negations
+/*function largestSumAfterKNegations(arr, num) {
+    for (let a = 0; a < num; a++) {
+        let index = Math.min(...arr)
+        if (index <= 0) arr[arr.indexOf(index)] = Math.abs(index)
+        if (index >= 0) arr[arr.indexOf(index)] = -Math.abs(index)
+    }
+    return arr.reduce((acc, elem) => acc += elem)
+}
+console.log(largestSumAfterKNegations([2,-3,-1,5,-4], 2));*/
+
+//  Partition Array Into Three Parts With Equal Sum
+/*function canThreePartsEqualSum(arr) {
+    const sum = arr.reduce((c, a) => c + a)
+    if (sum % 3 === 0) {
+        let target = sum/3 | 0, sum2 = 0, count = 0
+        for (let a = 0; a < arr.length; a++) {
+            if (count === 2) return true
+            sum2 += arr[a]
+            if (sum2 === target) {count++; sum2=0}
+        }
+    }
+    return false
+}
+console.log(canThreePartsEqualSum([3,3,6,5,-2,2,5,1,-9,4]));*/
+
+
 
 
 
