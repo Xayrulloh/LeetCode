@@ -1758,7 +1758,28 @@ console.log(lastStoneWeight([1]));*/
 /*let removeDuplicates = (str, res = []) => {str.split('').forEach(element => element !== res[res.length - 1] ? res.push(element) : res.pop()); return res.join('')}
 console.log(removeDuplicates("abbaca"));*/
 
+// Height Checker
+/*function heightChecker(arr) {
+    let newarr = [...arr]
+    arr.sort((a, b) => a - b)
+    let res = 0
+    for (let a = 0; a < arr.length; a++) {
+        if (arr[a] != newarr[a]) res++
+    }
+    return res
+}
+console.log(heightChecker([5,1,2,3,4]));*/
 
+// Occurrences After Bigram
+/*function findOcurrences(f, s, t) {
+    let res = []
+    f = f.split(' ')
+    for (let a = 0; a < f.length - 2; a++) {
+        if (f[a] === s && f[a + 1] === t) res.push(f[a + 2]); 
+    }
+    return res
+}
+console.log(findOcurrences("we will we will rock you", "we", "will"));*/
 
 
 
