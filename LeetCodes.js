@@ -1830,8 +1830,13 @@ console.log(numEquivDominoPairs([[1,1],[2,2],[1,1],[1,2],[1,2],[1,1]]));*/
 }
 console.log(tribonacci(25));*/
 
+// Day of the Year
+/*let dayOfYear = str => Math.floor((new Date(str).getTime() - new Date(str.slice(0, -5) + '01-01').getTime()) / 86400000) + 1
+console.log(dayOfYear("2003-03-01"));*/
 
-
+// Day of the Week
+/*const dayOfTheWeek = (day, month, year) => ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][new Date(year, month - 1, day).getDay()]
+console.log(dayOfTheWeek(31, 8, 2019));*/
 
 
 
