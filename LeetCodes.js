@@ -1801,8 +1801,34 @@ console.log(distributeCandies(10, 3));*/
 }
 console.log(defangIPaddr("1.1.1.1"));*/
 
+// Number of Equivalent Domino Pairs
+/*function numEquivDominoPairs(arr) {
+    let count = 0
+    for (let b = 0; b < arr.length; b++) {
+        for (let a = b + 1; a < arr.length; a++) {
+            if (arr[b][0]===arr[a][0] && arr[b][1]===arr[a][1]) {count++; continue}
+            if(arr[b][1]===arr[a][0] && arr[b][0]===arr[a][1]) count++;
+        }
+    }
+    return count
+}
+console.log(numEquivDominoPairs([[1,1],[2,2],[1,1],[1,2],[1,2],[1,1]]));*/
 
-
+// N-th Tribonacci Number
+/*function tribonacci(num) {
+    let zero = 0, one = 1, two = 1, sum = 0
+    if (num === 0) return zero 
+    if (num === 1) return one 
+    if (num === 2) return two 
+    for (let a = 3; a < num; a++) {
+        sum = zero + one + two
+        zero = one
+        one = two
+        two = sum
+    }
+    return zero + one + two
+}
+console.log(tribonacci(25));*/
 
 
 
