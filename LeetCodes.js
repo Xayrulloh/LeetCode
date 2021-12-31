@@ -1781,7 +1781,25 @@ console.log(heightChecker([5,1,2,3,4]));*/
 }
 console.log(findOcurrences("we will we will rock you", "we", "will"));*/
 
+// Distribute Candies to People
+/*function distributeCandies(candies, people) {
+    let a = 0, res = new Array(people).fill(0)
+    while (candies - a > 0) {
+        res[a % people] += a + 1; a++; candies -= a
+    }
+    res[a % people] += candies
+    return res
+}
+console.log(distributeCandies(10, 3));*/
 
+// Defanging an IP Address
+/*function defangIPaddr(str) {
+    let res = ''
+    str = str.split('.')
+    for (let a = 0; a < str.length - 1; a++) {res += str[a] + '[.]'}
+    return res += str[str.length - 1]
+}
+console.log(defangIPaddr("1.1.1.1"));*/
 
 
 
