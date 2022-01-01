@@ -1,6 +1,7 @@
 "use strict"
 
 const { count } = require("console")
+const { access } = require("fs")
 
 // twoSum
 /*var twoSum = function(arr, target) {
@@ -1917,9 +1918,13 @@ console.log(shiftGrid([[3,8,1,9],[19,7,2,5],[4,6,11,10],[12,0,21,13]], 4));*/
 }
 console.log(subtractProductAndSum(4421));*/
 
+// Element Appearing More Than 25% In Sorted Array
+/*const findSpecialInteger = arr =>Number(` ${arr.join('  ')} `.match(new RegExp(`( \\d+ )${'\\1'.repeat(Math.trunc(arr.length / 4))}`),)[1].trim(),);
+console.log(findSpecialInteger([1,2,2,6,6,6,6,7,10]));*/
 
-
-
+// Find Numbers with Even Number of Digits
+/*let findNumbers = arr => {let res = 0; arr.forEach(element => {if (String(element).length % 2 === 0) res++}); return res}
+console.log(findNumbers([12,345,2,6,7896]));*/
 
 
 
