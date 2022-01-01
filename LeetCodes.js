@@ -1884,16 +1884,38 @@ console.log(uniqueOccurrences([-3,0,1,-3,1,1,1,-3,10,0]));*/
 console.log(balancedStringSplit("RLLLLRRRLR"));*/
 
 // Check If It Is a Straight Line
-function checkStraightLine(arr) {
+/*function checkStraightLine(arr) {
     if (arr.length === 2) return true
     for (let a = 0; a < arr.length - 2; a++) {
         if ((arr[a + 2][1] - arr[a + 1][1]) * (arr[a + 1][0] - arr[a][0]) !=(arr[a + 1][1] - arr[a][1]) * (arr[a + 2][0] - arr[a + 1][0])) return false 
     }
     return true
 }
-console.log(checkStraightLine([[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]));
+console.log(checkStraightLine([[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]));*/
 
+// Shift 2D Grid
+/*function shiftGrid(grid, k) {
+    let [w, h, flattened] = [grid[0].length, grid.length, []];
+    const t = w * h;
+    k %= t;
+    flattened = flattened.concat(...grid)
+    const sFlattened = [...flattened.slice(-k), ...flattened.slice(0, -k)];
+    const shifted = [];
+     for (let i = 0; i < t; i += w) shifted.push(sFlattened.slice(i, i + w));
+     return shifted;
+}
+console.log(shiftGrid([[3,8,1,9],[19,7,2,5],[4,6,11,10],[12,0,21,13]], 4));*/
 
+// Subtract the Product and Sum of Digits of an Integer
+/*function subtractProductAndSum(num) {
+    let [add, multiply] = [0, 1]
+    for (const a of num + '') {
+        add += +a
+        multiply *= +a
+    }
+    return multiply - add
+}
+console.log(subtractProductAndSum(4421));*/
 
 
 
