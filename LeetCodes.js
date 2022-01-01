@@ -1926,6 +1926,46 @@ console.log(findSpecialInteger([1,2,2,6,6,6,6,7,10]));*/
 /*let findNumbers = arr => {let res = 0; arr.forEach(element => {if (String(element).length % 2 === 0) res++}); return res}
 console.log(findNumbers([12,345,2,6,7896]));*/
 
+// Replace Elements with Greatest Element on Right Side
+/*function replaceElements(arr) {
+    let max = -1
+    let last = []
+    for (let a = arr.length - 1; a >= 0; a--) {
+        last = arr[a]
+        arr[a] = max
+        if (last > max) {
+            max = last
+        }
+    }
+    return arr
+}
+console.log(replaceElements([17,18,5,4,6,1]));*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
