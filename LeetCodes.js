@@ -1,4 +1,7 @@
 "use strict"
+
+const { count } = require("console")
+
 // twoSum
 /*var twoSum = function(arr, target) {
     let newarr = []
@@ -1837,6 +1840,45 @@ console.log(dayOfYear("2003-03-01"));*/
 // Day of the Week
 /*const dayOfTheWeek = (day, month, year) => ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][new Date(year, month - 1, day).getDay()]
 console.log(dayOfTheWeek(31, 8, 2019));*/
+
+// Maximum Number of Balloons
+/*function maxNumberOfBalloons(str) {
+    let b = [], a = [], l = [], o = [], n = [], count = 0
+    str = str.split('').sort().join('')
+    for (const c of str) {if (c === 'b') b.push(c); if (c === 'a') a.push(c); if (c === 'l') l.push(c); if (c === 'o') o.push(c); if (c === 'n') n.push(c);}
+    if (!b || !a || !l || !o || !n) return 0
+    else {
+        while (b.length && a.length && l.length >= 2 && o.length >= 2 && n.length) {b.shift(); a.shift(); l.shift(); l.shift(); o.shift(); o.shift(); n.shift(); count++}
+    }
+    return count
+}
+console.log(maxNumberOfBalloons("nlaebolko"));*/
+
+// Unique Number of Occurrences
+/*function uniqueOccurrences(arr) {
+    let obj = {}
+    for (const a of arr) {
+        obj[a] = obj[a] ? obj[a] + 1 : 1
+    }
+    let occurrences = {}
+    console.log(obj);
+    for (let value of Object.values(obj)) {
+        if (occurrences[value]) return false
+        else occurrences[value] = 1
+        console.log(occurrences);
+    }
+    return true
+}
+console.log(uniqueOccurrences([-3,0,1,-3,1,1,1,-3,10,0]));*/
+
+// Split a String in Balanced Strings
+
+
+
+
+
+
+
 
 
 
