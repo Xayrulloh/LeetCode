@@ -1884,16 +1884,14 @@ console.log(uniqueOccurrences([-3,0,1,-3,1,1,1,-3,10,0]));*/
 console.log(balancedStringSplit("RLLLLRRRLR"));*/
 
 // Check If It Is a Straight Line
-/*function checkStraightLine(arr) {
+function checkStraightLine(arr) {
     if (arr.length === 2) return true
     for (let a = 0; a < arr.length - 2; a++) {
-        if ((arr[a + 2][1] - arr[a + 1][1]) * (arr[a + 1][0] - arr[a][0] != (arr[a + 1][1] - arr[a][1]) * (arr[a + 2][0] - arr[a + 1][0]))) return false
+        if ((arr[a + 2][1] - arr[a + 1][1]) * (arr[a + 1][0] - arr[a][0]) !=(arr[a + 1][1] - arr[a][1]) * (arr[a + 2][0] - arr[a + 1][0])) return false 
     }
     return true
 }
-console.log(checkStraightLine([[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]));*/
-
-
+console.log(checkStraightLine([[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]));
 
 
 
