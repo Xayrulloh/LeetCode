@@ -1941,7 +1941,20 @@ console.log(findNumbers([12,345,2,6,7896]));*/
 }
 console.log(replaceElements([17,18,5,4,6,1]));*/
 
+// Sum of Unique Elements
+/*function sumOfUnique(arr) {
+    let [res, obj] = [0, {}]
+    for (const a of arr) {
+        obj[a] = obj[a] ? obj[a] + 1 : 1
+    }
+    for (const a in obj) {
+        if (obj[a] === 1) res += +a
+    }
+    return res
+}
+console.log(sumOfUnique([1,1,1,1,1]));*/
 
+// 
 
 
 
