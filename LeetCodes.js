@@ -1969,9 +1969,23 @@ console.log(sumZero(2));*/
 }
 console.log(freqAlphabets("1326#"));*/
 
+// Decompress Run-Length Encoded List
+/*function decompressRLElist(arr) {
+    let res = []
+    for (let a = 0; a < arr.length; a += 2) {
+        res = [...res, ...new Array(arr[a]).fill(arr[a+1])]
+    }
+    return res
+}
+console.log(decompressRLElist([1,2,3,4]));*/
 
-
-
+// Convert Integer to the Sum of Two No-Zero Integers
+/*function getNoZeroIntegers(num) {
+    for (let a = 1, b = num - 1; a < num; a++, b--) {
+        if (!String(a).includes('0') && !String(b).includes('0')) return [a, b]
+    }
+}
+console.log(getNoZeroIntegers(1010));*/
 
 
 
