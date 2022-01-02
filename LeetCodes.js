@@ -1954,9 +1954,20 @@ console.log(replaceElements([17,18,5,4,6,1]));*/
 }
 console.log(sumOfUnique([1,1,1,1,1]));*/
 
-// 
+// Find N Unique Integers Sum up to Zero
+/*const sumZero = n => n === 2 ? [1 , -1] : [...new Array(n - 1).keys(), 0 - ((n - 1) * (n - 2)) / 2];
+console.log(sumZero(2));*/
 
-
+// Decrypt String from Alphabet to Integer Mapping
+/*function freqAlphabets(str) {
+    let alphabet = 'abcdefghijklmnopqrstuvwxyz', res = ''
+    for (let a = 0; a < str.length; a++) {
+        if (str[a + 2] === '#') {res += alphabet[Number(str[a] + str[a + 1]) - 1]; a += 2}
+        else {res += alphabet[Number(str[a]) - 1]}
+    }
+    return res
+}
+console.log(freqAlphabets("1326#"));*/
 
 
 
