@@ -1987,6 +1987,25 @@ console.log(decompressRLElist([1,2,3,4]));*/
 }
 console.log(getNoZeroIntegers(1010));*/
 
+// Maximum 69 Number
+/*function maximum69Number(num) {
+    num += ''
+    if (num.includes('6')) {
+        for (let a = 0; a < num.length; a++) {
+            if (num[a] === '6') {num = num.replace(num[a], '9'); return +num}
+        }
+    }
+    return +num
+}
+console.log(maximum69Number(9966));*/
+
+// Rank Transform of an Array
+/*function arrayRankTransform(arr) {
+    const ranks = [...new Set(arr)].sort((a, b) => a - b).reduce((acc, curr, idx) => acc.set(curr, idx + 1), new Map())
+    return arr.map(n => ranks.get(n))
+}
+console.log(arrayRankTransform([37,12,28,9,100,56,80,5,12]));*/
+
 
 
 
