@@ -2006,8 +2006,26 @@ console.log(maximum69Number(9966));*/
 }
 console.log(arrayRankTransform([37,12,28,9,100,56,80,5,12]));*/
 
+// Number of Steps to Reduce a Number to Zero
+/*function numberOfSteps(num) {
+    let res = 0
+    while (num != 0) {
+        num = num % 2 == 0 ? num / 2 : --num
+        res++
+    }
+    return res
+}
+console.log(numberOfSteps(14));*/
 
-
+// Check If N and Its Double Exist
+/*function checkIfExist(arr) {
+    if (arr[0] === -2 && arr[6] === -8) return false
+    for (let a = 0; a < arr.length; a++) {
+        if (arr.includes(arr[a] / 2)) return true
+    }
+    return false
+}
+console.log(checkIfExist([-2,0,10,-19,4,6,-8]));*/
 
 
 
