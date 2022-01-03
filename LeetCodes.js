@@ -2027,8 +2027,26 @@ console.log(numberOfSteps(14));*/
 }
 console.log(checkIfExist([-2,0,10,-19,4,6,-8]));*/
 
+// Number of Days Between Two Dates
+/*let daysBetweenDates = (date1, date2) => Math.abs(Math.floor((new Date(date1).getTime() - new Date(date2).getTime()) / 86400000))
+console.log(daysBetweenDates("2020-01-15", "2019-12-31"));*/
 
-
+// Relative Ranks
+/*function findRelativeRanks(arr) {
+    let res = []
+    for (let a = 0; a < arr.length; a++) {
+        let count = 0
+        for (let b = 0; b < arr.length; b++) {
+            if (arr[a] < arr[b]) count++
+        }
+        if (count === 0) res.push("Gold Medal")
+        else if (count === 1) res.push("Silver Medal")
+        else if (count === 2) res.push("Bronze Medal")
+        else res.push(String(++count))
+    }
+    return res
+}
+console.log(findRelativeRanks([10,3,8,9,4, 7]));*/
 
 
 
