@@ -2048,7 +2048,9 @@ console.log(daysBetweenDates("2020-01-15", "2019-12-31"));*/
 }
 console.log(findRelativeRanks([10,3,8,9,4, 7]));*/
 
-
+// How Many Numbers Are Smaller Than the Current Number
+/*let smallerNumbersThanCurrent = arr => arr.map((num1, a) => arr.reduce((count, num2, ii) => num1 > num2 ? count + 1 : count, 0))
+console.log(smallerNumbersThanCurrent([8, 1, 2, 2, 3]));*/
 
 
 
