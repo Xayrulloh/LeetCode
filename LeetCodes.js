@@ -2177,7 +2177,19 @@ console.log(isPrefixOfWord("hellohello hellohellohello", "ell"));*/
 }
 console.log(canBeEqual([1,2,3,4], [2,4,1,3]));*/
 
+// Maximum Product of Two Elements in an Array
+/*const maxProduct = arr => (arr.sort((a, b) => a - b)[arr.length - 2] - 1) * (arr[arr.length - 1] - 1)
+console.log(maxProduct([3, 7]));*/
 
+// Shuffle the Array
+/*function shuffle(arr, num) {
+    let half = arr.splice(0, num), res = []
+    for (let a = 0; a < half.length; a++) {
+        res.push(half[a], arr[a])
+    }
+    return res
+}
+console.log(shuffle([2,5,1,3,4,7], 3));*/
 
 
 
