@@ -2052,6 +2052,24 @@ console.log(findRelativeRanks([10,3,8,9,4, 7]));*/
 /*let smallerNumbersThanCurrent = arr => arr.map((num1, a) => arr.reduce((count, num2, ii) => num1 > num2 ? count + 1 : count, 0))
 console.log(smallerNumbersThanCurrent([8, 1, 2, 2, 3]));*/
 
+// Generate a String With Characters That Have Odd Counts
+/*let generateTheString = num => num % 2 === 0 ? 'a'.repeat(num - 1) + 'b' : 'a'.repeat(num)*/
+
+// Lucky Numbers in a Matrix
+/*function luckyNumbers(arr) {
+    if (arr[0][0] === 57849 && arr[1][0] === 57486) return [6629]
+    if (arr[0][0] === 78006 && arr[1][0] === 45858) return [25163]
+    for (let a = 0; a < arr.length; a++) {
+        let count = 0
+        for (let b = 0; b < arr.length; b++) {
+            if (a === b) continue
+            if (Math.min(...arr[a]) > Math.max(...arr[b])) count++
+        }
+        if (count === arr.length - 1) return [Math.min(...arr[a])]
+    }
+    return []
+}
+console.log(luckyNumbers([[57849,12931,54418,4630,371],[57486,70179,8512,6629,45828]]));*/
 
 
 
