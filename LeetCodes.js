@@ -2071,8 +2071,29 @@ console.log(smallerNumbersThanCurrent([8, 1, 2, 2, 3]));*/
 }
 console.log(luckyNumbers([[57849,12931,54418,4630,371],[57486,70179,8512,6629,45828]]));*/
 
+// Find the Distance Value Between Two Arrays
+/*function findTheDistanceValue(arr1, arr2, num) {
+    let res = 0
+    for (const a of arr1) {
+        let bool = true
+        for (const b of arr2) {
+            if (Math.abs(a - b) <= num) {bool = false; break}
+        }
+        if (bool) res++;
+    }
+    return res
+}
+console.log(findTheDistanceValue([4,5,8], [10,9,1,8], 2));*/
 
-
+// Create Target Array in the Given Order
+/*function createTargetArray(nums, index) {
+    let res = []
+    for (let a = 0; a < nums.length; a++) {
+        res.splice(index[a], 0, nums[a])
+    }
+    return res
+}
+console.log(createTargetArray([1,2,3,4,0], [0,1,2,3,0]));*/
 
 
 
