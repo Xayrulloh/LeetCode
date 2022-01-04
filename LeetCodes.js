@@ -2095,8 +2095,22 @@ console.log(findTheDistanceValue([4,5,8], [10,9,1,8], 2));*/
 }
 console.log(createTargetArray([1,2,3,4,0], [0,1,2,3,0]));*/
 
+// Find Lucky Integer in an Array
+/*function findLucky(arr) {
+    let [obj, res] = [{}, []]
+    for (const a of arr) {
+        obj[a] = obj[a] ? ++obj[a] : 1
+    }
+    for (let key in obj) {
+        key == obj[key] ? res.push(Number(key)) : res.push(-1)
+    }
+    return Math.max(...res)
+}
+console.log(findLucky([2,2,2,3,3]));*/
 
-
+// Maximum Number of Words Found in Sentences
+/*let mostWordsFound = arr => Math.max(...arr.map((y) => y.split(' ').length))
+console.log(mostWordsFound(["please wait", "continue to fight", "continue to win"]));*/
 
 
 
