@@ -1,8 +1,4 @@
 "use strict"
-
-const { count } = require("console")
-const { access } = require("fs")
-
 // twoSum
 /*var twoSum = function(arr, target) {
     let newarr = []
@@ -2129,6 +2125,36 @@ console.log(checkString("aaabbb"));*/
     return Array.from(new Set(res))
 }
 console.log(stringMatching(["mass","as","hero","superhero"]));*/
+
+// Destination City
+/*function destCity(arr) {
+    let res = []
+    for (let a = 0; a < arr.length; a++) {
+        res.push(arr[a][0])
+    }
+    for (let a = 0; a < arr.length; a++) {
+        if (!res.includes(arr[a][1])) return arr[a][1]
+    }
+    return res
+}
+console.log(destCity([["B","C"],["D","B"],["C","A"]]));*/
+
+// Build an Array With Stack Operations
+/*function buildArray(arr, num) {
+    let [res, j] = [[], 1]
+    for (let a = 0; a < arr.length; a++) {
+        if (arr[a] === j) res.push('Push')
+        else {res.push('Push', 'Pop'); a--}
+        j++
+    }
+    return res
+}
+console.log(buildArray([1,2], 3));
+
+
+
+
+
 
 
 
