@@ -2112,7 +2112,23 @@ console.log(findLucky([2,2,2,3,3]));*/
 /*let mostWordsFound = arr => Math.max(...arr.map((y) => y.split(' ').length))
 console.log(mostWordsFound(["please wait", "continue to fight", "continue to win"]));*/
 
+// Check if All A's Appears Before All B's
+/*let checkString = str => str.includes('ba') === -1
+console.log(checkString("aaabbb"));*/
 
+// String Matching in an Array
+/*function stringMatching(arr) {
+    let res = []
+    arr.sort((a, b) => a.length - b.length)
+    for (let a = 0; a < arr.length; a++) {
+        for (let b = 0; b < arr.length - 1; b++) {
+            if (a == b) continue
+            if (arr[a].includes(arr[b])) {res.push(arr[b])}
+        }
+    }
+    return Array.from(new Set(res))
+}
+console.log(stringMatching(["mass","as","hero","superhero"]));*/
 
 
 
