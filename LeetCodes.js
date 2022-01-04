@@ -2165,7 +2165,17 @@ console.log(maxPower("abbcccddddeeeeedcba"));*/
 }
 console.log(busyStudent([1,2,3], [3,2,7], 4));*/
 
-// 
+// Check If a Word Occurs As a Prefix of Any Word in a Sentence
+/*const isPrefixOfWord = (str, search) => {str = str.split(' '); for (const a of str) if (a.startsWith(search)) return str.indexOf(a) + 1; return -1}
+console.log(isPrefixOfWord("hellohello hellohellohello", "ell"));*/
+
+// Make Two Arrays Equal by Reversing Sub-arrays
+/*function canBeEqual(target, arr) {
+    target.sort((a, b) => a - b)
+    arr.sort((a, b) => a - b)
+    return target.toString() === arr.toString()
+}
+console.log(canBeEqual([1,2,3,4], [2,4,1,3]));*/
 
 
 
