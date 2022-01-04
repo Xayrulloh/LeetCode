@@ -2191,6 +2191,16 @@ console.log(maxProduct([3, 7]));*/
 }
 console.log(shuffle([2,5,1,3,4,7], 3));*/
 
+// Complement of Base 10 Integer
+/*function bitwiseComplement(num) {
+    num = num.toString(2)
+    let res = ''
+    for (let a = 0; a < num.length; a++) {
+        num[a] === '1' ? res += '0' : res += '1'
+    }
+    return parseInt(res, 2)
+}
+console.log(bitwiseComplement(5));*/
 
 
 
