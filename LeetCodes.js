@@ -2149,7 +2149,23 @@ console.log(destCity([["B","C"],["D","B"],["C","A"]]));*/
     }
     return res
 }
-console.log(buildArray([1,2], 3));
+console.log(buildArray([1,2], 3));*/
+
+// Consecutive Characters
+/*let maxPower = str => str.split(/((\w)\2*)/).reduce((max, match) => (max < match.length ? match.length : max), -Infinity)
+console.log(maxPower("abbcccddddeeeeedcba"));*/
+
+// Number of Students Doing Homework at a Given Time
+/*function busyStudent(start, end, cur) {
+    let res = 0
+    for (let a = 0; a < start.length; a++) {
+        if (start[a] <= cur && cur <= end[a]) res++
+    }
+    return res
+}
+console.log(busyStudent([1,2,3], [3,2,7], 4));*/
+
+// 
 
 
 
