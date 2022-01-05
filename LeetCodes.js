@@ -2291,6 +2291,25 @@ console.log(numIdenticalPairs([1, 1, 1, 1]));*/
 }
 console.log(numWaterBottles(9, 3));*/
 
+// Count Odd Numbers in an Interval Range
+/*function countOdds(start, end) {
+    let res = 0
+    for (; start <= end; start++) if (start % 2 !== 0) res++
+    return res
+}
+console.log(countOdds(3, 7));-*/
+
+// Shuffle String
+/*function restoreString(str, indexes) {
+    let res = new Array(str.length).fill(0)
+    for (let a = 0; a < str.length; a++) {
+        res[indexes[a]] = str[a]
+    }
+    return res.join('')
+}
+console.log(restoreString("codeleet", [4,5,6,7,0,2,1,3]));*/
+
+
 
 
 

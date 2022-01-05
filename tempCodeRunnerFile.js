@@ -1,5 +1,5 @@
-1; a < str.length; a+= num - 1) {
-    //     res += str[a]
-    //     str = str.slice(0, a) + str.slice(a + 1)
+r (let a = 0; a < str.length; a++) {
+    //     console.log(indexes[a], res);
+    //     res.splice(indexes[a], 0, str[a])
     // }
-    // console.log(str);
+    // return res
