@@ -2219,18 +2219,33 @@ console.log(finalPrices([10,1,1,6]));*/
 
 // Running Sum of 1d Array
 /*function runningSum(arr) {
-    let res = []
-    for (let a = 0; a < arr.length; a++) {
-        let sum  = 0        
-        for (let b = 0; b <= a; b++) {
-            sum += arr[b]
-        }
+    let [res, sum] = [[], 0]
+    for (let a of arr) {
+        sum += a
         res.push(sum)
     }
     return res
 }
 console.log(runningSum([3,1,2,10,1]));*/
 
+// Average Salary Excluding the Minimum and Maximum Salary
+/*function average(arr) {
+    let max = Math.max(...arr), min = Math.min(...arr), res = [], sum = 0
+    arr.forEach(el => { if (el != max && el != min) {res.push(el); sum += el}});
+    return sum / res.length
+}
+console.log(average([1000,2000,3000]));*/
+
+// Can Make Arithmetic Progression From Sequence
+/*function canMakeArithmeticProgression(arr) {
+    arr.sort((a, b) => a - b)
+    let difference = arr[1] - arr[0]
+    for (let a = 1; a < arr.length; a++) {
+        if (arr[a] - arr[a - 1] !== difference) return false
+    }
+    return true
+}
+console.log(canMakeArithmeticProgression([1,2,3, 4, 5, 7]));*/
 
 
 
