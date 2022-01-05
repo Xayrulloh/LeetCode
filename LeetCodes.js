@@ -2202,6 +2202,92 @@ console.log(shuffle([2,5,1,3,4,7], 3));*/
 }
 console.log(bitwiseComplement(5));*/
 
+// Final Prices With a Special Discount in a Shop
+/*function finalPrices(arr) {
+    let res = []
+    for (let a = 0; a < arr.length - 1; a++) {
+        let check  = true
+        for (let b = a + 1; b < arr.length; b++) {
+            if (arr[a] >= arr[b]) {res.push(arr[a] - arr[b]); check = false; break}
+        }
+        if (check === true) res.push(arr[a])
+    }
+    res.push(arr[arr.length - 1])
+    return res
+}
+console.log(finalPrices([10,1,1,6]));*/
+
+// Running Sum of 1d Array
+/*function runningSum(arr) {
+    let res = []
+    for (let a = 0; a < arr.length; a++) {
+        let sum  = 0        
+        for (let b = 0; b <= a; b++) {
+            sum += arr[b]
+        }
+        res.push(sum)
+    }
+    return res
+}
+console.log(runningSum([3,1,2,10,1]));*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
