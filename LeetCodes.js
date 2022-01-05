@@ -2309,9 +2309,24 @@ console.log(countOdds(3, 7));-*/
 }
 console.log(restoreString("codeleet", [4,5,6,7,0,2,1,3]));*/
 
+// Count Good Triplets
+/*function countGoodTriplets(arr, a, b, c) {
+    let res = 0
+    for (let i = 0; i < arr.length - 2; i++) for (let j = i + 1; j < arr.length - 1; j++) for (let k = j + 1; k < arr.length; k++) if (Math.abs(arr[i] - arr[j]) <= a && Math.abs(arr[j] - arr[k]) <= b && Math.abs(arr[i] - arr[k]) <= c) res++;
+    return res
+}
+console.log(countGoodTriplets([3,0,1,1,9,7], 7, 2, 3));*/
 
-
-
+// Kth Missing Positive Number
+/*function findKthPositive(arr, num) {
+    let res = [], i = 1
+    while (res.length != num) {
+        if (!arr.includes(i)) res.push(i)
+        i++
+    }
+    return res[res.length - 1]
+}
+console.log(findKthPositive([1,2,3,4], 2));*/
 
 
 
