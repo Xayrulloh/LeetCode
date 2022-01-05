@@ -2280,7 +2280,16 @@ console.log(reformatDate("20th Oct 2052"));*/
 }
 console.log(numIdenticalPairs([1, 1, 1, 1]));*/
 
-
+// Water Bottles
+/*function numWaterBottles(bottle, change) {
+    let res = bottle
+    while (bottle >= change) {
+        res += bottle / change | 0 
+        bottle = (bottle / change | 0) + bottle % change | 0
+    }
+    return res
+}
+console.log(numWaterBottles(9, 3));*/
 
 
 
