@@ -2353,8 +2353,11 @@ console.log(makeGood("leEeetcode")); //cdAAbb*/
 }
 console.log(threeConsecutiveOdds([1, 1, 1]));*/
 
+// Thousand Separator
+/*const thousandSeparator = num => num.toLocaleString('de-DE')
+console.log(thousandSeparator(1234));*/
 
-
+// 
 
 
 
