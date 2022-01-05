@@ -2328,7 +2328,30 @@ console.log(countGoodTriplets([3,0,1,1,9,7], 7, 2, 3));*/
 }
 console.log(findKthPositive([1,2,3,4], 2));*/
 
+// Make The String Great
+/*function makeGood(str) {
+    let newstr = ''
+    for (let a = 0; a < str.length; a++) {
+        if (!newstr) {newstr = str[a]; continue}
+        let word = newstr[newstr.length - 1]
+        if (word === word.toUpperCase()) {
+            if (str[a] === word.toLowerCase()) newstr = newstr.slice(0, newstr.length - 1)
+            else newstr += str[a]
+        } else {
+            if (str[a] === word.toUpperCase()) newstr = newstr.slice(0, newstr.length - 1)
+            else newstr += str[a]
+        }
+    }
+    return newstr
+}
+console.log(makeGood("leEeetcode")); //cdAAbb*/
 
+// Three Consecutive Odds
+/*function threeConsecutiveOdds(arr) {
+    for (let a = 0; a < arr.length - 2; a++) if (arr[a] % 2 != 0 && arr[a + 1] % 2 != 0 && arr[a + 2] % 2 != 0) return true
+    return false
+}
+console.log(threeConsecutiveOdds([1, 1, 1]));*/
 
 
 
