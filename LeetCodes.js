@@ -2247,8 +2247,38 @@ console.log(average([1000,2000,3000]));*/
 }
 console.log(canMakeArithmeticProgression([1,2,3, 4, 5, 7]));*/
 
+// Reformat Date
+/*function reformatDate(date) {
+    const m = {
+        Jan: "01",
+      Feb: "02",
+      Mar: "03",
+      Apr: "04",
+      May: "05",
+      Jun: "06",
+      Jul: "07",
+      Aug: "08",
+      Sep: "09",
+      Oct: "10",
+      Nov: "11",
+      Dec: "12",
+    }
+    const [day, month, year] = date.split(" ");
+    return year + "-" + m[month] + "-" + (parseInt(day) < 10 ? "0" + parseInt(day) : parseInt(day));
+}
+console.log(reformatDate("20th Oct 2052"));*/
 
-
+// Number of Good Pairs
+/*function numIdenticalPairs(arr) {
+    let res = 0
+    for (let a = 0; a < arr.length; a++) {
+        for (let b = a + 1; b < arr.length; b++) {
+            if (arr[a] === arr[b]) res++
+        }
+    }
+    return res
+}
+console.log(numIdenticalPairs([1, 1, 1, 1]));*/
 
 
 
