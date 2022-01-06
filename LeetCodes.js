@@ -2394,6 +2394,28 @@ console.log(convert("PAYPALISHIRING", 3));*/
 }
 console.log(canBeIncreasing([2,3,4,5,1,5]));*/
 
+// Duplicate Zeros
+/*function duplicateZeros(arr) {
+    for (let a = 0; a < arr.length; a++) {
+        if (arr[a] === 0) {arr.splice(a, 0, 0); arr.pop(); a++}
+    }
+    return arr
+}
+console.log(duplicateZeros([1,0,2,3,0,4,5,0]));*/
+
+// Most Visited Sector in a Circular Track
+/*function mostVisited(num, arr) {
+    const start = arr[0], end = arr[arr.length - 1], result = []
+    if (start <= end) {
+        for (let a = start; a <= end; a++) result.push(a)
+    } else {
+        for (let a = 1; a <= end; a++) result.push(a)
+        for (let a = start; a <= num; a++) result.push(a)
+    }
+    return result
+}
+console.log(mostVisited(2, [2,1,2,1,2,1,2,1,2]));*/
+
 
 
 
