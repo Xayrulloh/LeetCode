@@ -2357,8 +2357,42 @@ console.log(threeConsecutiveOdds([1, 1, 1]));*/
 /*const thousandSeparator = num => num.toLocaleString('de-DE')
 console.log(thousandSeparator(1234));*/
 
-// 
+// Zigzag Conversion
+/*function convert(str, num) {
+    let res = [], step = 1, index = 0 // index = 1
+    for (let a = 0; a < str.length; a++) {
+        if (res[index] === undefined) {
+            res[index] = ''
+        }
+        res[index] += str[a]
+        if (index === 0) {
+            step = 1
+        }
+        else if (index === num - 1) {
+            step = -1
+        }
+        index += step 
+    }
+    return res.join('')
+}
+console.log(convert("PAYPALISHIRING", 3));*/
 
+// Remove One Element to Make the Array Strictly Increasing
+/*function canBeIncreasing(arr) {
+    if (arr.length === 2) return true
+    for (let a = 0; a < arr.length; a++) {
+        let removed = arr.splice(a, 1)
+        let res = [...arr]
+        res.sort((a, b) => a - b)
+        if (arr.toString() === res.toString() && res[0] < res[1]) {
+            if (res[res.length - 1] === res[res.length - 2]) return false
+            return true
+        }
+        arr.splice(a, 0, ...removed)
+    }
+    return false
+}
+console.log(canBeIncreasing([2,3,4,5,1,5]));*/
 
 
 
