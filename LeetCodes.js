@@ -2437,10 +2437,21 @@ console.log(containsPattern([1,2,3,1,2], 2, 2));*/
 }
 console.log(isThree(4));*/
 
+// Matrix Diagonal Sum
+/*function diagonalSum(arr) {
+    let sum = 0, simple = []
+    if (arr.length === 1) return Number(arr[0])
+    for (let a = 0; a < arr.length; a++) {
+        sum += arr[a][a]
+        sum += arr[a][arr.length - a - 1]
+    }
+    return arr.length % 2 ? sum -= arr[arr.length / 2 | 0][arr.length / 2 | 0] : sum
+}
+console.log(diagonalSum([[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]));*/
 
-
-
-
+// Valid Perfect Square
+/*const isPerfectSquare = num => num**0.5 === Math.round(num**0.5)
+console.log(isPerfectSquare(8));*/
 
 
 
