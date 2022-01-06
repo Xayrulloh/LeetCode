@@ -2416,10 +2416,26 @@ console.log(duplicateZeros([1,0,2,3,0,4,5,0]));*/
 }
 console.log(mostVisited(2, [2,1,2,1,2,1,2,1,2]));*/
 
+// Detect Pattern of Length M Repeated K or More Times
+/*function containsPattern(arr, m, k) {
+    for (let a = m, b = 0; a < arr.length; a++) {
+        if (arr[a] != arr[a - m]) b = 0
+        else if (++b == m * (k - 1)) return true
+    }
+    return false
+}
+console.log(containsPattern([1,2,3,1,2], 2, 2));*/
 
-
-
-
+// Three Divisors
+/*function isThree(num) {
+    let check = 2
+    for (let a = 2; a < num; a++) {
+        if (num % a === 0) check++
+        if (check > 3) return false
+    }
+    return check === 3
+}
+console.log(isThree(4));*/
 
 
 
