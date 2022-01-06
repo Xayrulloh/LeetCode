@@ -2453,6 +2453,17 @@ console.log(diagonalSum([[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]));*/
 /*const isPerfectSquare = num => num**0.5 === Math.round(num**0.5)
 console.log(isPerfectSquare(8));*/
 
+// Arranging Coins
+/*function arrangeCoins(num) {
+    let res = 0, a = 1
+    while (num >= a) {
+        num -= a
+        res++
+        a++
+    }
+    return res
+}
+console.log(arrangeCoins(8));*/
 
 
 
