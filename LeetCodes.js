@@ -2439,8 +2439,7 @@ console.log(isThree(4));*/
 
 // Matrix Diagonal Sum
 /*function diagonalSum(arr) {
-    let sum = 0, simple = []
-    if (arr.length === 1) return Number(arr[0])
+    let sum = 0
     for (let a = 0; a < arr.length; a++) {
         sum += arr[a][a]
         sum += arr[a][arr.length - a - 1]
@@ -2464,6 +2463,39 @@ console.log(isPerfectSquare(8));*/
     return res
 }
 console.log(arrangeCoins(8));*/
+
+// Replace All ?'s to Avoid Consecutive Repeating Characters
+/*function modifyString(str) {
+    str = str.split('')
+    for (let a = 0; a < str.length; a++) {
+        if (str[a] === '?') {
+            if (str[a + 1] != 'a' && str[a - 1] !== 'a') str[a] = 'a'
+            else if (str[a + 1] != 'b' && str[a - 1] !== 'b') str[a] = 'b'
+            else if (str[a + 1] != 'c' && str[a - 1] !== 'c') str[a] = 'c'
+        }
+    }
+    return str.join('')
+}
+console.log(modifyString("??"));*/
+
+// Sum of All Odd Length Subarrays
+/*function sumOddLengthSubarrays(arr) {
+    let res = 0
+    for (let a = 0; a < arr.length; a++) {
+        for (let b = a; b < arr.length; b++) {
+            let array = []
+            for (let c = a; c <= b; c++) {
+                array.push(arr[c])
+            }
+            if (array.length % 2 !== 0) {
+                res += array.reduce((acc, el) => acc + el)
+            }
+        }
+    }
+    return res
+}
+console.log(sumOddLengthSubarrays([1,4,2,5,3]));*/
+
 
 
 
