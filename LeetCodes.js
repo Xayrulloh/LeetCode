@@ -2497,21 +2497,16 @@ console.log(modifyString("??"));*/
 console.log(sumOddLengthSubarrays([1,4,2,5,3]));*/
 
 // Rearrange Spaces Between Words
-// function reorderSpaces(str) {
-//     let space = 0, word = str.trim().split(/\s+/).length, res = ''
-//     for (const a of str) {
-//         if (a === ' ') space++
-//     }
-//     if (str.trim().split(/\s+/).length === 1) {return str += ' '.repeat(space)}
-//     let spaces = space / (word - 1) | 0, residue = space % spaces
-//     str = str.trim().split(/\s+/)
-//     for (let a = 0; a < str.length; a++) {
-//         if (a === str.length - 1) {res += str[a]; break}
-//         res += str[a] + ' '.repeat(spaces)
-//     }
-//     return residue ? res += ' '.repeat(residue) : res
-// }
-// console.log(reorderSpaces("  hello"));
+/*function reorderSpaces(str) {
+    let spaces = 0, words = str.trim().split(/\s+/)
+    for (let char of str) {
+        if (char === ' ') spaces++;
+    }
+    let space = spaces / (words.length - 1) | 0, residue = spaces - (space * (words.length - 1)); 
+    if (words.length > 1)  return words.join(' '.repeat(space)) + ' '.repeat(residue)
+    return words.join('') + ' '.repeat(spaces);
+}
+console.log(reorderSpaces(" practice   makes   perfect"));*/
 
 // Contest
 // Capitalize the Title
