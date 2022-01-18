@@ -2520,8 +2520,25 @@ console.log(reorderSpaces(" practice   makes   perfect"));*/
 }
 console.log(capitalizeTitle("i lOve leetcode"));*/
 
+// Word Pattern
+/*function wordPattern(pattern, word) {
+    pattern = pattern.split('')
+    word = word.split(' ')
+    if (pattern.length !== word.length) return false
+    let obj = {}
+    for (let a = 0; a < pattern.length; a++) {
+      if (obj[pattern[a]]) {
+        if (obj[pattern[a]] !== word[a]) return false
+      }else{
+        if (Object.values(obj).includes(word[a])) return false
+        obj[pattern[a]] = word[a]
+      }
+    }
+    return true
+  }
+  console.log(wordPattern('abba', 'dog dog dog dog'));*/
 
-
+  
 
 
 
