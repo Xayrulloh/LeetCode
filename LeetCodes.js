@@ -2538,7 +2538,19 @@ console.log(capitalizeTitle("i lOve leetcode"));*/
   }
   console.log(wordPattern('abba', 'dog dog dog dog'));*/
 
-  
+// Delete Characters to Make Fancy String
+/*function makeFancyString(s) {
+    s = s.split('')
+    for (let a = 0; a < s.length; a++) {
+        if (s[a] === s[a + 1] && s[a] === s[a + 2]) {
+            s[a] = ''
+        }
+    }
+    return s.join('')
+}
+console.log(makeFancyString("aaabaaaa"));*/
+
+// 
 
 
 
