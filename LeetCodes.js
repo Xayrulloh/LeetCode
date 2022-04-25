@@ -145,10 +145,10 @@ console.log(removeDuplicates([0,0,0,0,0, 0, 0]));*/
 // removeElement
 /*function removeElement(arr, num) {
     for (let a = 0; a < arr.length; a++) {
-       if (arr[a] === num) {
-           arr.splice(a, 1)
-           a--
-       }
+        if (arr[a] === num) {
+            arr.splice(a, 1)
+            a--
+        }
     }
     return arr.length
 }
@@ -236,16 +236,16 @@ console.log(plusOne([6,1,4,5,3,9,0,1,9,5,1,8,6,7,0,5,5,4,3]));*/
     let carry = 0, result = "";
     let i = a.length - 1, j = b.length - 1;
     while(i >= 0 || j >= 0) {
-      let num1 = i < 0 ? 0 : a[i] | 0;
-      let num2 = j < 0 ? 0 : b[j] | 0;
-      carry = carry + num1 + num2;
-      result = carry % 2 + result; //concat string in proper order
-      carry = carry / 2 | 0;
-      i--;
-      j--;
+        let num1 = i < 0 ? 0 : a[i] | 0;
+        let num2 = j < 0 ? 0 : b[j] | 0;
+        carry = carry + num1 + num2;
+        result = carry % 2 + result; //concat string in proper order
+        carry = carry / 2 | 0;
+        i--;
+        j--;
     }
     return carry ? carry + result : result;
-  };*/
+};*/
 
 // Sqrt(x)
 /*function mySqrt(x) {
@@ -469,7 +469,7 @@ console.log(singleNumber([1, 2, 2, 1, 4]));*/
     for (let a = 0; a <= arr.length; a++) {
         for (let b = a + 1; b < arr.length; b++) {
             if (arr[a] + arr[b] === target) return [a+1, b+1]
-
+            
         }
     }
 } 
@@ -508,26 +508,26 @@ console.log(containsNearbyDuplicate([1,2,3,1], 3));*/
     var tmp = 0;
     var res = '';
     while (num > 0) {
-      tmp = num % 26;
-      if (tmp === 0) tmp = 26;
-      res = getChar(tmp) + res;
-      num = (num - tmp) / 26;
+        tmp = num % 26;
+        if (tmp === 0) tmp = 26;
+        res = getChar(tmp) + res;
+        num = (num - tmp) / 26;
     }
     return res;
-  };
-  
-  var getChar = function (num) {
+};
+
+var getChar = function (num) {
     var start = 'A'.charCodeAt(0);
     return String.fromCharCode(start + num - 1);
-  };
-  console.log(convertToTitle(701));*/
+};
+console.log(convertToTitle(701));*/
 
 // Excel Sheet Column Number
 /*function titleToNumber(s) {
     const dict = {
-                A: 1, B: 2, C: 3, D: 4, E: 5, F: 6, G: 7, H: 8, I: 9, J: 10, K: 11, L: 12, M: 13, N: 14,
-                O: 15, P: 16, Q: 17, R: 18, S: 19, T: 20, U: 21, V: 22, W: 23, X: 24, Y: 25, Z: 26
-            }
+        A: 1, B: 2, C: 3, D: 4, E: 5, F: 6, G: 7, H: 8, I: 9, J: 10, K: 11, L: 12, M: 13, N: 14,
+        O: 15, P: 16, Q: 17, R: 18, S: 19, T: 20, U: 21, V: 22, W: 23, X: 24, Y: 25, Z: 26
+    }
     let number = 0
     let power = 0
     for (let a = s.length - 1; a >= 0; a--) {
@@ -710,23 +710,23 @@ console.log(lengthOfLongestSubstring("abcabcdb"));*/
 console.log(longestPalindrome("a"));*/
 
 /*function longestPalindrome(s) {  // copied
-  // ll: Left index of the longest palindrome.
-  // rr: Right index of the longest palindrome.
-  let ll = 0, rr = 0;
-
-  // Iterate all palindromes with center indices
-  // [..., i, ...] or [... i, i+1, ...]
-  for (let i = 0; i < s.length; i++) {
-    for (let j of [i, i+1]) {
-      for (l = i, r = j; s[l] && s[l] === s[r]; l--, r++)
-
-        // Found a new palindrome [l, ..., i, j, ..., r]
-        // Update the ll, rr if the newly found palindrome is longer than the
-        // existing one.
-        [ll, rr] = (r-l+1) > (rr-ll+1) ? [l, r] : [ll, rr];
+    // ll: Left index of the longest palindrome.
+    // rr: Right index of the longest palindrome.
+    let ll = 0, rr = 0;
+    
+    // Iterate all palindromes with center indices
+    // [..., i, ...] or [... i, i+1, ...]
+    for (let i = 0; i < s.length; i++) {
+        for (let j of [i, i+1]) {
+            for (l = i, r = j; s[l] && s[l] === s[r]; l--, r++)
+            
+            // Found a new palindrome [l, ..., i, j, ..., r]
+            // Update the ll, rr if the newly found palindrome is longer than the
+            // existing one.
+            [ll, rr] = (r-l+1) > (rr-ll+1) ? [l, r] : [ll, rr];
+        }
     }
-  }
-  return s.substring(ll, rr+1);
+    return s.substring(ll, rr+1);
 }*/
 
 // Reverse Integer
@@ -1094,7 +1094,7 @@ console.log(judgeCircle('LL'));*/
     return [para, arr[arr.length - 1] == arr.length ? missing : arr.length]  // para bzasa aniq, arr oxirgi elementi teng bosa arr lengthiga, yani qanaqangi taxlanganini biliwga, yani 1, 2, 3 bosa yoqolgan sonni qoyadi, agar 3, 2, 1 bosa arr lengthi 
 }
 console.log(findErrorNums([3, 2, 2]));*/
-    
+
 // Maximum Average Subarray I
 /*function findMaxAverage(arr, k) {
     let res = []
@@ -1684,13 +1684,13 @@ console.log(addToArrayForm([1,2,6,3,0,7,1,7,1,9,7,5,6,6,4,4,0,0,6,3], 516));*/
         if (arr[R[0]][a] === 'p') {check = true; break}
     }
     if (check === true) {check = false; res++}
-
+    
     for (let a = R[1]; a < arr[R[0]].length; a++) {  // onga yurgamman
         if (arr[R[0]][a] === 'B') break
         if (arr[R[0]][a] === 'p') {check = true; break}
     }
     if (check === true) {check = false; res++}
-
+    
     return res
 }
 console.log(numRookCaptures([[".",".",".",".",".",".",".","."],[".",".",".","p",".",".",".","."],[".",".",".","R",".",".",".","p"],[".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".","."],[".",".",".","p",".",".",".","."],[".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".","."]]));*/
@@ -1898,8 +1898,8 @@ console.log(checkStraightLine([[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]));*/
     flattened = flattened.concat(...grid)
     const sFlattened = [...flattened.slice(-k), ...flattened.slice(0, -k)];
     const shifted = [];
-     for (let i = 0; i < t; i += w) shifted.push(sFlattened.slice(i, i + w));
-     return shifted;
+    for (let i = 0; i < t; i += w) shifted.push(sFlattened.slice(i, i + w));
+    return shifted;
 }
 console.log(shiftGrid([[3,8,1,9],[19,7,2,5],[4,6,11,10],[12,0,21,13]], 4));*/
 
@@ -2251,17 +2251,17 @@ console.log(canMakeArithmeticProgression([1,2,3, 4, 5, 7]));*/
 /*function reformatDate(date) {
     const m = {
         Jan: "01",
-      Feb: "02",
-      Mar: "03",
-      Apr: "04",
-      May: "05",
-      Jun: "06",
-      Jul: "07",
-      Aug: "08",
-      Sep: "09",
-      Oct: "10",
-      Nov: "11",
-      Dec: "12",
+        Feb: "02",
+        Mar: "03",
+        Apr: "04",
+        May: "05",
+        Jun: "06",
+        Jul: "07",
+        Aug: "08",
+        Sep: "09",
+        Oct: "10",
+        Nov: "11",
+        Dec: "12",
     }
     const [day, month, year] = date.split(" ");
     return year + "-" + m[month] + "-" + (parseInt(day) < 10 ? "0" + parseInt(day) : parseInt(day));
@@ -2527,16 +2527,16 @@ console.log(capitalizeTitle("i lOve leetcode"));*/
     if (pattern.length !== word.length) return false
     let obj = {}
     for (let a = 0; a < pattern.length; a++) {
-      if (obj[pattern[a]]) {
-        if (obj[pattern[a]] !== word[a]) return false
-      }else{
-        if (Object.values(obj).includes(word[a])) return false
-        obj[pattern[a]] = word[a]
-      }
+        if (obj[pattern[a]]) {
+            if (obj[pattern[a]] !== word[a]) return false
+        }else{
+            if (Object.values(obj).includes(word[a])) return false
+            obj[pattern[a]] = word[a]
+        }
     }
     return true
-  }
-  console.log(wordPattern('abba', 'dog dog dog dog'));*/
+}
+console.log(wordPattern('abba', 'dog dog dog dog'));*/
 
 // Delete Characters to Make Fancy String
 /*function makeFancyString(s) {
@@ -2550,8 +2550,20 @@ console.log(capitalizeTitle("i lOve leetcode"));*/
 }
 console.log(makeFancyString("aaabaaaa"));*/
 
-// 
+// 2248. Intersection of Multiple Arrays
 
+/*function intersection(nums) {
+    let a = [];
+
+    for (let i = 0; i < nums[0].length; i++) {
+        if (nums.every((x) => x.includes(nums[0][i]))) {
+            a.push(nums[0][i]);
+        }
+    }
+
+    return a.sort((a, b) => a - b);
+}
+console.log(intersection([[3, 1, 2, 4, 5], [1, 2, 3, 4], [3, 4, 5, 6]]));*/
 
 
 
