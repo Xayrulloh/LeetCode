@@ -170,7 +170,7 @@ console.log(strStr("", "a"));*/
         return arr.indexOf(target)
     }else {
         for (let a = 0; a < arr.length; a++) {
-            if (target < arr[a]) return a   
+            if (target < arr[a]) return a
         }
     }
     return arr.length
@@ -472,7 +472,7 @@ console.log(singleNumber([1, 2, 2, 1, 4]));*/
             
         }
     }
-} 
+}
 console.log(twoSum([2,7,11,15], 9));*/
 
 // Majority Element
@@ -655,7 +655,7 @@ console.log(isAnagram("anagram", "nagaram"));*/
 }*/
 
 // Find All Numbers Disappeared in an Array
-/*let findDisappearedNumbers = (nums) => Array.from({length:nums.length}, (v,i) => i+1).filter(item => !nums.includes(item))  
+/*let findDisappearedNumbers = (nums) => Array.from({length:nums.length}, (v,i) => i+1).filter(item => !nums.includes(item))
 console.log(findDisappearedNumbers([4,3,2,7,8,2,3,1]));*/
 
 //  Median of Two Sorted Arrays
@@ -866,7 +866,7 @@ console.log(addStrings("9333852702227987","85731737104263"));*/
 
 // Number of Segments in a String
 /*function countSegments(str) {
-    return !str.trim() ? 0 : str.trim().replace(/\s+/g, ' ').split(" ").length  
+    return !str.trim() ? 0 : str.trim().replace(/\s+/g, ' ').split(" ").length
 }
 console.log(countSegments("Tom fsfa fsadfsadf fsfasfsa           fjsfjioasf sfsa sf"));*/
 
@@ -886,7 +886,7 @@ console.log(countSegments("Tom fsfa fsadfsadf fsfasfsa           fjsfjioasf sfsa
 }
 console.log(fib(1));*/
 
-// Perfect Number  faster than 100% 
+// Perfect Number  faster than 100%
 /*function checkPerfectNumber(num) {
     if (num === 120 || num === 2016 || num === 32640) return false
     let sum = num / 2
@@ -894,7 +894,7 @@ console.log(fib(1));*/
     let half = num / 2
     while (half > 1) {
         sum += Math.ceil(half / 2)
-        half = Math.ceil(half / 2) 
+        half = Math.ceil(half / 2)
     }
     return (num) === sum ? true : false
 }
@@ -1091,7 +1091,7 @@ console.log(judgeCircle('LL'));*/
         if (arr[a] == arr[a - 1]) para = arr[a]  //  2 ta teng bogan sonni topib para ga ozlawtiriladi
         if (arr[a] > arr[a - 1] + 1) missing = arr[a - 1] + 1  // yoqolgan sonni topiladi
     }
-    return [para, arr[arr.length - 1] == arr.length ? missing : arr.length]  // para bzasa aniq, arr oxirgi elementi teng bosa arr lengthiga, yani qanaqangi taxlanganini biliwga, yani 1, 2, 3 bosa yoqolgan sonni qoyadi, agar 3, 2, 1 bosa arr lengthi 
+    return [para, arr[arr.length - 1] == arr.length ? missing : arr.length]  // para bzasa aniq, arr oxirgi elementi teng bosa arr lengthiga, yani qanaqangi taxlanganini biliwga, yani 1, 2, 3 bosa yoqolgan sonni qoyadi, agar 3, 2, 1 bosa arr lengthi
 }
 console.log(findErrorNums([3, 2, 2]));*/
 
@@ -1336,7 +1336,7 @@ console.log(minCostClimbingStairs([10,15,20], 15));*/
 // Unique Morse Code Words
 /*const alphabet = {
     a: '.-', b: '-...',   c: '-.-.', d: '-..', e: '.', f: '..-.', g: '--.', h: '....', i: '..',  j: '.---',  k: '-.-',  l: '.-..', m: '--',
-    n: '-.',  o: '---', p: '.--.',  q: '--.-',  r: '.-.', s: '...', t: '-', u: '..-', v: '...-', w: '.--', x: '-..-',  y: '-.--', z: '--..' 
+    n: '-.',  o: '---', p: '.--.',  q: '--.-',  r: '.-.', s: '...', t: '-', u: '..-', v: '...-', w: '.--', x: '-..-',  y: '-.--', z: '--..'
 }
 let uniqueMorseRepresentations = words => new Set(words.map(word => word.split('').map(letter => alphabet[letter]).join(''))).size
 console.log(uniqueMorseRepresentations(["gin","zen","gig","msg"]));*/
@@ -1522,7 +1522,7 @@ console.log(uncommonFromSentences("apple apple", "banana"));*/
 console.log(sortArrayByParity([3, 1, 2, 4]));*/
 
 // Reverse Only Letters  i need repair this
-/*function reverseOnlyLetters(str) {  
+/*function reverseOnlyLetters(str) {
     str = str.split('')
     let res = []
     for (let a = 0, b = str.length - 1; a < str.length;) {
@@ -1667,7 +1667,7 @@ console.log(addToArrayForm([1,2,6,3,0,7,1,7,1,9,7,5,6,6,4,4,0,0,6,3], 516));*/
             }
         }
     }
-    for (let a = R[0]; a >= 0; a--) {  // tepaga 
+    for (let a = R[0]; a >= 0; a--) {  // tepaga
         if (arr[a][R[1]] === 'B') break
         if (arr[a][R[1]] === "p") {check = true; break}
     }
@@ -1775,7 +1775,7 @@ console.log(heightChecker([5,1,2,3,4]));*/
     let res = []
     f = f.split(' ')
     for (let a = 0; a < f.length - 2; a++) {
-        if (f[a] === s && f[a + 1] === t) res.push(f[a + 2]); 
+        if (f[a] === s && f[a + 1] === t) res.push(f[a + 2]);
     }
     return res
 }
@@ -1817,9 +1817,9 @@ console.log(numEquivDominoPairs([[1,1],[2,2],[1,1],[1,2],[1,2],[1,1]]));*/
 // N-th Tribonacci Number
 /*function tribonacci(num) {
     let zero = 0, one = 1, two = 1, sum = 0
-    if (num === 0) return zero 
-    if (num === 1) return one 
-    if (num === 2) return two 
+    if (num === 0) return zero
+    if (num === 1) return one
+    if (num === 2) return two
     for (let a = 3; a < num; a++) {
         sum = zero + one + two
         zero = one
@@ -1884,7 +1884,7 @@ console.log(balancedStringSplit("RLLLLRRRLR"));*/
 /*function checkStraightLine(arr) {
     if (arr.length === 2) return true
     for (let a = 0; a < arr.length - 2; a++) {
-        if ((arr[a + 2][1] - arr[a + 1][1]) * (arr[a + 1][0] - arr[a][0]) !=(arr[a + 1][1] - arr[a][1]) * (arr[a + 2][0] - arr[a + 1][0])) return false 
+        if ((arr[a + 2][1] - arr[a + 1][1]) * (arr[a + 1][0] - arr[a][0]) !=(arr[a + 1][1] - arr[a][1]) * (arr[a + 2][0] - arr[a + 1][0])) return false
     }
     return true
 }
@@ -2284,7 +2284,7 @@ console.log(numIdenticalPairs([1, 1, 1, 1]));*/
 /*function numWaterBottles(bottle, change) {
     let res = bottle
     while (bottle >= change) {
-        res += bottle / change | 0 
+        res += bottle / change | 0
         bottle = (bottle / change | 0) + bottle % change | 0
     }
     return res
@@ -2371,7 +2371,7 @@ console.log(thousandSeparator(1234));*/
         else if (index === num - 1) {
             step = -1
         }
-        index += step 
+        index += step
     }
     return res.join('')
 }
@@ -2502,7 +2502,7 @@ console.log(sumOddLengthSubarrays([1,4,2,5,3]));*/
     for (let char of str) {
         if (char === ' ') spaces++;
     }
-    let space = spaces / (words.length - 1) | 0, residue = spaces - (space * (words.length - 1)); 
+    let space = spaces / (words.length - 1) | 0, residue = spaces - (space * (words.length - 1));
     if (words.length > 1)  return words.join(' '.repeat(space)) + ' '.repeat(residue)
     return words.join('') + ' '.repeat(spaces);
 }
@@ -2551,35 +2551,91 @@ console.log(wordPattern('abba', 'dog dog dog dog'));*/
 console.log(makeFancyString("aaabaaaa"));*/
 
 // 2248. Intersection of Multiple Arrays
-
 /*function intersection(nums) {
     let a = [];
-
+    
     for (let i = 0; i < nums[0].length; i++) {
         if (nums.every((x) => x.includes(nums[0][i]))) {
             a.push(nums[0][i]);
         }
     }
-
+    
     return a.sort((a, b) => a - b);
 }
 console.log(intersection([[3, 1, 2, 4, 5], [1, 2, 3, 4], [3, 4, 5, 6]]));*/
 
+// 175. Combine Two Tables
+/* 
+SELECT p.firstName,
+p.lastName, 
+a.city, 
+a.state 
+FROM Person p 
+LEFT JOIN Address a ON a.personId = p.personId
+*/
+
+// 176. Second Highest Salary
+/*
+select max(salary) SecondHighestSalary 
+from Employee
+where salary != (select max(salary) from Employee)
+*/
+
+// 177. Nth Highest Salary
+/*
+CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+BEGIN
+  DECLARE OFFSET_VAR INT DEFAULT N-1;
+  RETURN (
+      # Write your MySQL query statement below.
+      select DISTINCT salary from Employee order by salary DESC limit 1 OFFSET OFFSET_VAR
+  );
+END
+*/
+
+// 178. Rank Scores
+/*
+SELECT score, dense_rank() OVER(ORDER BY score DESC) as "rank"
+FROM Scores
+*/
+
+// 182. Duplicate Emails
+/*
+SELECT email
+FROM Person
+GROUP BY email
+HAVING COUNT(*) > 1
+*/
+
+// 181. Employees Earning More Than Their Managers
+/*
+SELECT emp.name as Employee
+FROM Employee emp
+INNER JOIN Employee man on man.id = emp.managerId
+WHERE emp.salary > man.salary
+*/
 
 
+// 183. Customers Who Never Order
+/*
+select name as Customers
+from Customers
+left join Orders on Orders.customerId = Customers.id
+where Orders.id is null
+*/
 
+// Game Play Analysis I
+/*
+SELECT player_id, MIN(event_date) AS first_login 
+FROM Activity GROUP BY player_id
+*/
 
-
-
-
-
-
-
-
-
-
-
-
+// 584. Find Customer Referee
+/*
+select name
+from Customer
+where referee_id != 2 or referee_id is null
+*/
 
 
 
