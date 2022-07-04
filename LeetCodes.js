@@ -2615,7 +2615,6 @@ INNER JOIN Employee man on man.id = emp.managerId
 WHERE emp.salary > man.salary
 */
 
-
 // 183. Customers Who Never Order
 /*
 select name as Customers
@@ -2637,13 +2636,43 @@ from Customer
 where referee_id != 2 or referee_id is null
 */
 
+// 1757. Recyclable and Low Fat Products
+/*
+    select product_id from products
+    where low_fats = 'Y' and recyclable = 'Y'
+*/
 
+// 2235. Add Two Integers
+/*
+let sum = (num1, num2) => num1 + num2
+*/
 
+// 1693. Daily Leads and Partners
+/*
+    SELECT date_id, 
+    make_name,
+    COUNT(DISTINCT(lead_id)) AS unique_leads, 
+    COUNT(DISTINCT(partner_id)) AS unique_partners 
+    FROM DailySales 
+    GROUP BY date_id,make_name;
+*/
 
+// 1741. Find Total Time Spent by Each Employee
+/*
+    SELECT event_day AS day, emp_id, SUM(out_time - in_time) AS total_time
+    FROM employees
+    GROUP BY event_day, emp_id;
+*/
 
+// Concatenation of Array
+/*
+    let getConcatenation = nums => [...nums, ...nums]
+*/
 
-
-
+// Build Array from Permutation
+/*
+    let buildArray = (nums) => nums.map((x,i)=>nums[nums[i]]);
+*/
 
 
 
