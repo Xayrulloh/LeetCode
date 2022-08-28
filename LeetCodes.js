@@ -2674,8 +2674,23 @@ let sum = (num1, num2) => num1 + num2
     let buildArray = (nums) => nums.map((x,i)=>nums[nums[i]]);
 */
 
+// 193. Valid Phone Numbers
+// grep -P '^(\d{3}-|\(\d{3}\) )\d{3}-\d{4}$' file.txt
 
+// 195. Tenth Line
+// head -10 file.txt | tail +10
 
+// 196. Delete Duplicate Emails
+// delete p from Person p
+// inner join Person q
+// where p.id > q.id and p.email = q.email
+
+// 197. Rising Temperature
+// select a.id as id
+// from weather as a
+// join weather as b
+// on datediff(a.recordDate, b.recordDate) = 1
+// and a.temperature > b.temperature
 
 
 
