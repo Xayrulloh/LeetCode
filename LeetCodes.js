@@ -2692,8 +2692,26 @@ let sum = (num1, num2) => num1 + num2
 // on datediff(a.recordDate, b.recordDate) = 1
 // and a.temperature > b.temperature
 
+// 141. Linked List Cycle
+// function hasCycle(head) {
+//     let fast = head
+//     while (fast && fast.next) {
+//         head = head.next
+//         fast = fast.next.next
+//         if (fast === head) return true
+//     }
+//     return false
+// }
 
-
-
-
-
+// 206. Reverse Linked List
+// function reverseList(head) {
+//     let prev = null
+//     let curr = head
+//     while (curr) {
+//         const next = curr.next
+//         curr.next = prev
+//         prev = curr
+//         curr = next
+//     }
+//     return prev
+// }
