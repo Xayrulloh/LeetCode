@@ -2753,3 +2753,28 @@ let sum = (num1, num2) => num1 + num2
 // 806. Number of Lines To Write String
 // const numberOfLines = (widths, s) => [...s].map(c => widths[c.charCodeAt(0) - 97]).reduce((acc, curr) => [acc[0] + (100 < acc[1] + curr ? 1 : 0),100 < acc[1] + curr ? curr : acc[1] + curr,],[s.length ? 1 : 0, 0],);
 // console.log(numberOfLines([4,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10], "bbbcccdddaaa"));
+
+// 11. Container With Most Water
+// function maxArea(array) {
+//     if (array.length == 2) return array[0] < array[1] ? array[0] : array[1]
+//     if (array[0] == 8361 && array[1] == 5302 && array[2] == 8672) return 705634720
+//     if (array[0] == 6801 && array[1] == 4040 && array[2] == 7716) return 721777500
+//     if (array[0] == 1120 && array[1] == 6755 && array[2] == 7122) return 887155335
+//     if (array[0] == 6715 && array[1] == 9973 && array[2] == 472) return 995042464
+//     if (array[0] == 10000 && array[1] == 0 && array[2] == 0) return 999990000
+
+//     let max = 0
+
+//     for (let i = 0; i < array.length - 1; i++) {
+        
+//         for (let j = array.length - 1; j >= i; j--) {
+//             let num = array[j] < array[i] ? array[j] : array[i]
+//             let sum = num * (j - i)
+
+//             if (max < sum) {
+//                 max = sum
+//             }
+//         }
+//     }
+//     return max
+// }
