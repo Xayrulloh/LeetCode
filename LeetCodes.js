@@ -2750,3 +2750,6 @@ let sum = (num1, num2) => num1 + num2
 //     return s
 // }
 
+// 806. Number of Lines To Write String
+// const numberOfLines = (widths, s) => [...s].map(c => widths[c.charCodeAt(0) - 97]).reduce((acc, curr) => [acc[0] + (100 < acc[1] + curr ? 1 : 0),100 < acc[1] + curr ? curr : acc[1] + curr,],[s.length ? 1 : 0, 0],);
+// console.log(numberOfLines([4,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10], "bbbcccdddaaa"));
