@@ -2715,3 +2715,38 @@ let sum = (num1, num2) => num1 + num2
 //     }
 //     return prev
 // }
+
+// 234. Palindrome Linked List
+// function isPalindrome(head) {
+//     let p = s = f = head, rev = null;
+
+//     while (f && f.next) {
+//         f = f.next.next
+//         s = s.next
+//     }
+
+//     while (s) {
+//         let t = s.next
+//         s.next = rev
+//         rev = s
+//         s = t
+//     }
+
+//     while (rev && p) {
+//         if (p.val !== rev.val) return false
+//         p = p.next
+//         rev = rev.next 
+//     }
+//     return true
+// }
+
+// 876. Middle of the Linked List
+// function middleNode(head) {
+//     let s = f = head
+//     while (f != null && f.next != null) {
+//         f = f.next.next
+//         s = s.next
+//     }
+//     return s
+// }
+
