@@ -2786,4 +2786,68 @@ let sum = (num1, num2) => num1 + num2
 //     }
 //     return nums;
 // }
+  
+// ============================ TypeScript started
+// 1480. Running Sum of 1d Array
+// function runningSum(nums: number[]): number[] {
+//   for (let i: number = 1; i < nums.length; i++) {
+//     nums[i] = nums[i - 1]! + nums[i]!
+//   }
+//   return nums
+// }
+
+// 724. Find Pivot Index
+// function pivotIndex(nums: number[]): number {
+//   let right = nums.reduce((sum, current) => sum + current, 0), left = 0;
+  
+//   for (let i: number = 0; i < nums.length; i++) {
+//     left += nums[i]!
+    
+//     if (left === right) return i
+//     right -= nums[i]!
+//   }
+
+//   return -1
+// };
+
+// 704. Binary Search
+// function search(nums: number[], target: number): number {
+//   for (let i = 0; i < nums.length; i++) {
+//     if (nums[i] == target) return i
+//   }
+//   return -1
+// };
+
+// console.log(search([-1,0,3,5,9,12], 9));
+
+// 278. First Bad Version
+// var solution = function(isBadVersion: any) {
+
+//   return function(n: number): number {
+//       let start = 0;
+//       let end = n;
+//       while (start <= end) {
+//           let mid = Math.floor((start + end) / 2);
+//           if (isBadVersion(mid)) {
+//               end = mid - 1;
+//           } else {
+//               start = mid + 1;
+//           }
+//       }
+//       return start;
+//   };
+// };
+
+// 35. Search Insert Position
+// function searchInsert(nums: number[], target: number): number {
+//   if (nums[0]! > target) return 0
+//   for (let i = 0; i < nums.length; i++) {
+//     if (nums[i] === target) return i
+//     else if (nums[i]! < target && target < nums[i + 1]!)  return ++i;
+//   }
+
+//   return nums.length
+// };
+
+// console.log(searchInsert([1,3,5,6], 5));
 
