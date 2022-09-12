@@ -1,4 +1,3 @@
-"use strict"
 // twoSum
 /*var twoSum = function(arr, target) {
     let newarr = []
@@ -2735,7 +2734,7 @@ let sum = (num1, num2) => num1 + num2
 //     while (rev && p) {
 //         if (p.val !== rev.val) return false
 //         p = p.next
-//         rev = rev.next 
+//         rev = rev.next
 //     }
 //     return true
 // }
@@ -2766,7 +2765,7 @@ let sum = (num1, num2) => num1 + num2
 //     let max = 0
 
 //     for (let i = 0; i < array.length - 1; i++) {
-        
+
 //         for (let j = array.length - 1; j >= i; j--) {
 //             let num = array[j] < array[i] ? array[j] : array[i]
 //             let sum = num * (j - i)
@@ -2786,7 +2785,7 @@ let sum = (num1, num2) => num1 + num2
 //     }
 //     return nums;
 // }
-  
+
 // ============================ TypeScript started
 // 1480. Running Sum of 1d Array
 // function runningSum(nums: number[]): number[] {
@@ -2799,10 +2798,10 @@ let sum = (num1, num2) => num1 + num2
 // 724. Find Pivot Index
 // function pivotIndex(nums: number[]): number {
 //   let right = nums.reduce((sum, current) => sum + current, 0), left = 0;
-  
+
 //   for (let i: number = 0; i < nums.length; i++) {
 //     left += nums[i]!
-    
+
 //     if (left === right) return i
 //     right -= nums[i]!
 //   }
@@ -2851,3 +2850,53 @@ let sum = (num1, num2) => num1 + num2
 
 // console.log(searchInsert([1,3,5,6], 5));
 
+// 205. Isomorphic Strings
+// function isIsomorphic(s: string, t: string): boolean {
+//   if (s.length != t.length) return false;
+//   for (let i = 0; i < s.length; i++) {
+//     if (t.indexOf(t[i]) != s.indexOf(s[i])) return false
+// }
+//   return true;
+// }
+// console.log(isIsomorphic("paper", "title"));
+
+// 392. Is Subsequence
+// function isSubsequence(s: string, t: string): boolean {
+//     let check = 0
+//     for (let i = 0; i < t.length; i++) {
+//         if (t[i] == s[check]) ++check
+//     }
+//     return check === s.length ? true : false
+// };
+// console.log(isSubsequence('abe', 'ahbgdc'));
+
+// 189. Rotate Array
+// function rotate(nums: number[], k: number): void{
+//     if (k > nums.length) k %= nums.length;
+//     nums.unshift(...nums.splice(nums.length - k))
+// };
+// console.log(rotate([1,2], 3));
+
+// 179. Largest Number
+// function largestNumber(nums: number[]): string {
+//   const res = nums
+//     .map(String)
+//     .sort((a, b) => {
+//       return a.concat(b) > b.concat(a) ? -1 : 1;
+//     })
+//     .join("");
+
+//   return res.charAt(0) === "0" ? "0" : res;
+// }
+// console.log(largestNumber([3,30,34,5,9]));
+
+// 2. Add Two Numbers
+// function addTwoNumbers(l1: ListNode | null, l2: ListNode | null, overHead: number = 0): ListNode | null {
+//   const sum = (l1?.val || 0) + (l2?.val || 0) + overHead;
+//   const over = Math.trunc(sum / 10);
+//   const newListNode: ListNode = {
+//     val: sum % 10,
+//     next: ((l1?.next || l2?.next || over) && addTwoNumbers(l1?.next!, l2?.next!, over)) || null,
+//   };
+//   return newListNode;
+// }
