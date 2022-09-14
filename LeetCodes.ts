@@ -2900,3 +2900,58 @@ let sum = (num1, num2) => num1 + num2
 //   };
 //   return newListNode;
 // }
+
+// 21. Merge Two Sorted Lists
+// function mergeTwoLists(l1: ListNode | null, l2: ListNode | null): ListNode | null {
+//   const sentinel: ListNode = new ListNode();
+//   let currentNode: ListNode = sentinel;
+//   while (l1 && l2) {
+//     if (l1.val < l2.val) {
+//       currentNode.next = l1;
+//       l1 = l1.next;
+//     } else {
+//       currentNode.next = l2;
+//       l2 = l2.next;
+//     }
+//     currentNode = currentNode.next;
+//   }
+//   currentNode.next = l1 ?? l2;
+//   return sentinel.next;
+// }
+
+// 206. Reverse Linked List
+// function reverseList(head: ListNode | null): ListNode | null {
+//     let p1: ListNode | null = null;
+//     let p2: ListNode | null = head;
+//     while(p2 !== null) {
+//         const p3: ListNode | null = p2.next;
+//         p2.next = p1;
+//         p1 = p2;
+//         p2 = p3
+//     }
+//     return p1;
+// };
+
+// 283. Move Zeroes
+// function moveZeroes(nums: number[]): void {
+//     for (let a = nums.length; a >= 0; a--) {
+//         if (nums[a] == 0) {
+//             nums.splice(a, 1)
+//             nums.push(0)
+//         }
+//     }
+// };
+
+// 167. Two Sum II - Input Array Is Sorted
+// function twoSum(numbers: number[], target: number): number[] {
+//     for (let i = 0; i < numbers.length; i++) {
+//         for (let j = i + 1; j < numbers.length; j++) {
+//             if (numbers[i] + numbers[j] == target) return [++i, ++j]
+//         }
+//     }
+
+//     return []
+// };
+// console.log(twoSum([2,3,4], 6));
+
+
