@@ -2983,3 +2983,84 @@ let sum = (num1, num2) => num1 + num2
 //     return queue.length > 0 ? [] : result
 // };
 // console.log(findOriginalArray([1,3,4,2,6,8]));
+
+// 589. N-ary Tree Preorder Traversal
+// function preorder(root: Node | null): number[] {
+//     const res = [] as number[];
+//     if (!root) {
+//       return res;
+//     }
+  
+//     const stack = [root];
+  
+//     while (stack.length) {
+//       root = stack.pop();
+//       res.push(root.val);
+//       root.children.reverse().forEach((child) => stack.push(child));
+//     }
+  
+//     return res;
+//   }
+
+// 102. Binary Tree Level Order Traversal
+// function levelOrder(root: TreeNode | null): number[][] {
+//     const res: number[][] = [];
+  
+//     const helper = (node: TreeNode | null, i: number) => {
+//       if (!node) return;
+//       helper(node.left, i + 1);
+//       res[i] ? res[i].push(node.val) : (res[i] = [node.val]);
+//       helper(node.right, i + 1);
+//     };
+  
+//     helper(root, 0);
+  
+//     return res;
+//   }
+
+// 567. Permutation in String
+// var checkInclusion = function (s1, s2) {
+//     const chars = new Array(26).fill(0);
+  
+//     const isPermutation = () => chars.every((char) => char === 0);
+  
+//     for (const char of s1) {
+//       chars[char.charCodeAt(0) - 97]++;
+//     }
+  
+//     for (let i = 0; i < s2.length; i++) {
+//       chars[s2[i].charCodeAt(0) - 97]--;
+  
+//       if (i >= s1.length) {
+//         chars[s2[i - s1.length].charCodeAt(0) - 97]++;
+//       }
+  
+//       if (isPermutation()) return true;
+//     }
+  
+//     return false;
+//   };
+// console.log(checkInclusion('ab', "eidbaooo"));
+
+// 1770. Maximum Score from Performing Multiplication Operations
+// function maximumScore(nums: number[], multipliers: number[]): number {
+//     let lastLine = new Array(nums.length + 1).fill(0)
+//     let thisLine = new Array(nums.length + 1).fill(0)
+
+//     for(let i = multipliers.length -1; i >= 0; i--) {
+//         const multiplier = multipliers[i]
+
+//         for(let left = i; left >= 0; left--) {
+//             const right = nums.length - 1 - (i - left);
+//             thisLine[left] = Math.max(
+//                 multiplier * nums[left]  + lastLine[left + 1],
+//                 multiplier * nums[right] + lastLine[left]
+//             )
+            
+//         }
+//         [lastLine, thisLine] = [thisLine, []]
+
+//     }
+//     return lastLine[0]
+// };
+// console.log(maximumScore([555,526,732,182,43,-537,-434,-233,-947,968,-250,-10,470,-867,-809,-987,120,607,-700,25,-349,-657,349,-75,-936,-473,615,691,-261,-517,-867,527,782,939,-465,12,988,-78,-990,504,-358,491,805,756,-218,513,-928,579,678,10], [783,911,820,37,466,-251,286,-74,-899,586,792,-643,-969,-267,121,-656,381,871,762,-355,721,753,-521]));
