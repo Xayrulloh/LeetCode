@@ -2954,4 +2954,32 @@ let sum = (num1, num2) => num1 + num2
 // };
 // console.log(twoSum([2,3,4], 6));
 
+// 142. Linked List Cycle II
+// function detectCycle(head: ListNode | null): ListNode | null {
+//   const set = new Set<ListNode>();
+//   let current = head;
+//   while (current) {
+//     if (set.has(current)) return current;
+//     set.add(current);
+//     current = current.next;
+//   }
+//   return null;
+// }
 
+// 2007. Find Original Array From Doubled Array
+// function findOriginalArray(arr: number[]): number[] {
+//     if (arr.length % 2) return []
+    
+//     arr.sort((a, b) => a - b)
+//     let result: number[] = [], queue: number[] = [], i = 0;
+    
+//     for (const num of arr) {
+//         if (queue.length > 0 && queue[0] === num) {
+//             result[i++] = queue.shift()! / 2
+//         } else {
+//             queue.push(num * 2)
+//         }
+//     }
+//     return queue.length > 0 ? [] : result
+// };
+// console.log(findOriginalArray([1,3,4,2,6,8]));
