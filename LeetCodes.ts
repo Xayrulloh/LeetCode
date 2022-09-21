@@ -2969,10 +2969,10 @@ let sum = (num1, num2) => num1 + num2
 // 2007. Find Original Array From Doubled Array
 // function findOriginalArray(arr: number[]): number[] {
 //     if (arr.length % 2) return []
-    
+
 //     arr.sort((a, b) => a - b)
 //     let result: number[] = [], queue: number[] = [], i = 0;
-    
+
 //     for (const num of arr) {
 //         if (queue.length > 0 && queue[0] === num) {
 //             result[i++] = queue.shift()! / 2
@@ -2990,54 +2990,54 @@ let sum = (num1, num2) => num1 + num2
 //     if (!root) {
 //       return res;
 //     }
-  
+
 //     const stack = [root];
-  
+
 //     while (stack.length) {
 //       root = stack.pop();
 //       res.push(root.val);
 //       root.children.reverse().forEach((child) => stack.push(child));
 //     }
-  
+
 //     return res;
 //   }
 
 // 102. Binary Tree Level Order Traversal
 // function levelOrder(root: TreeNode | null): number[][] {
 //     const res: number[][] = [];
-  
+
 //     const helper = (node: TreeNode | null, i: number) => {
 //       if (!node) return;
 //       helper(node.left, i + 1);
 //       res[i] ? res[i].push(node.val) : (res[i] = [node.val]);
 //       helper(node.right, i + 1);
 //     };
-  
+
 //     helper(root, 0);
-  
+
 //     return res;
 //   }
 
 // 567. Permutation in String
 // var checkInclusion = function (s1, s2) {
 //     const chars = new Array(26).fill(0);
-  
+
 //     const isPermutation = () => chars.every((char) => char === 0);
-  
+
 //     for (const char of s1) {
 //       chars[char.charCodeAt(0) - 97]++;
 //     }
-  
+
 //     for (let i = 0; i < s2.length; i++) {
 //       chars[s2[i].charCodeAt(0) - 97]--;
-  
+
 //       if (i >= s1.length) {
 //         chars[s2[i - s1.length].charCodeAt(0) - 97]++;
 //       }
-  
+
 //       if (isPermutation()) return true;
 //     }
-  
+
 //     return false;
 //   };
 // console.log(checkInclusion('ab', "eidbaooo"));
@@ -3056,7 +3056,7 @@ let sum = (num1, num2) => num1 + num2
 //                 multiplier * nums[left]  + lastLine[left + 1],
 //                 multiplier * nums[right] + lastLine[left]
 //             )
-            
+
 //         }
 //         [lastLine, thisLine] = [thisLine, []]
 
@@ -3064,3 +3064,30 @@ let sum = (num1, num2) => num1 + num2
 //     return lastLine[0]
 // };
 // console.log(maximumScore([555,526,732,182,43,-537,-434,-233,-947,968,-250,-10,470,-867,-809,-987,120,607,-700,25,-349,-657,349,-75,-936,-473,615,691,-261,-517,-867,527,782,939,-465,12,988,-78,-990,504,-358,491,805,756,-218,513,-928,579,678,10], [783,911,820,37,466,-251,286,-74,-899,586,792,-643,-969,-267,121,-656,381,871,762,-355,721,753,-521]));
+
+// 98. Validate Binary Search Tree
+// function isValidBST(root: TreeNode | null): boolean {
+//   const traverse = (node: TreeNode | null, min: number, max: number) => {
+//     if (!node) return true;
+
+//     if (node.val <= min) return false;
+//     if (node.val >= max) return false;
+
+//     return traverse(node.left, min, node.val) && traverse(node.right, node.val, max);
+//   };
+
+//   return traverse(root, Number.MIN_SAFE_INTEGER, Number.MAX_SAFE_INTEGER);
+// }
+
+// 235. Lowest Common Ancestor of a Binary Search Tree
+// function lowestCommonAncestor(root: TreeNode | null, p: TreeNode | null, q: TreeNode | null): TreeNode | null {
+// 	if(p.val > q.val) [p,q] = [q,p]
+    
+//     return findLCA(root);
+    
+//     function findLCA(node: TreeNode | null) {
+//         if(!node || (p.val <= node.val && node.val <= q.val)) return node;
+        
+//         return (node.val > q.val) ? findLCA(node.left) : findLCA(node.right);
+//     }
+// };
