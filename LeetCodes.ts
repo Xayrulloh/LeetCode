@@ -3082,12 +3082,95 @@ let sum = (num1, num2) => num1 + num2
 // 235. Lowest Common Ancestor of a Binary Search Tree
 // function lowestCommonAncestor(root: TreeNode | null, p: TreeNode | null, q: TreeNode | null): TreeNode | null {
 // 	if(p.val > q.val) [p,q] = [q,p]
-    
+
 //     return findLCA(root);
-    
+
 //     function findLCA(node: TreeNode | null) {
 //         if(!node || (p.val <= node.val && node.val <= q.val)) return node;
-        
+
 //         return (node.val > q.val) ? findLCA(node.left) : findLCA(node.right);
 //     }
+// };
+
+// 733. Flood Fill
+// function floodFill(image, sr, sc, newColor) {
+//   const c = image[sr][sc];
+//   const fill = (i, j) => {
+//     if (!image[i] || image[i][j] == undefined || image[i][j] == newColor || image[i][j] != c) return;
+//     image[i][j] = newColor;
+//     fill(i + 1, j);
+//     fill(i - 1, j);
+//     fill(i, j + 1);
+//     fill(i, j - 1);
+//   };
+//   fill(sr, sc)
+//   return image
+// }
+
+// 200. Number of Islands
+// function numIslands(grid: string[][]): number {
+//   if (grid.length === 0 || !grid) {
+//     return 0;
+//   }
+//   let result = 0;
+//   const find = (x, y, grid) => {
+//     if (x < 0 || y < 0 || x >= grid.length || y >= grid[x].length || grid[x][y] === "0") {
+//       return;
+//     } else {
+//       grid[x][y] = "0";
+//       find(x + 1, y, grid);
+//       find(x - 1, y, grid);
+//       find(x, y + 1, grid);
+//       find(x, y - 1, grid);
+//     }
+//   };
+
+//   for (let i = 0; i < grid.length; i++) {
+//     for (let j = 0; j < grid[i].length; j++) {
+//       if (grid[i][j] === "1") {
+//         result++;
+//         find(i, j, grid);
+//       }
+//     }
+//   }
+//   return result;
+// }
+
+// 62. Unique Paths
+// const uniquePaths = (m: number, n: number) => {
+//   const tbl = [...Array(m)].map(() => Array(n).fill(1));
+
+//   for (let i = m - 2; i >= 0; i--) {
+//     for (let j = n - 2; j >= 0; j--) {
+//       tbl[i][j] = tbl[i + 1][j] + tbl[i][j + 1];
+//     }
+//   }
+
+//   return tbl[0][0];
+// };
+
+// 438. Find All Anagrams in a String
+// var findAnagrams = function (s: string, p: string) {
+//     const chars = new Array(26).fill(0), res: number[] = [];
+    
+//     for(let i = 0; i < p.length; i++) {
+//         chars[p.charCodeAt(i) - 97]--;
+//     }
+    
+    
+//     main:
+//     for(let i = 0; i < s.length; i++){
+//         chars[s.charCodeAt(i) - 97]++;
+
+//         if(i < p.length - 1) continue;
+//         if(i > p.length - 1) chars[s.charCodeAt(i - p.length) - 97]--;
+
+//         for(let j = 0; j < 26; j++){
+//             if(chars[j]) continue main;
+//         }
+        
+//         res.push(i - p.length + 1);
+//     }
+    
+//     return res;
 // };
