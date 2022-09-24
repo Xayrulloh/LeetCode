@@ -3152,12 +3152,11 @@ let sum = (num1, num2) => num1 + num2
 // 438. Find All Anagrams in a String
 // var findAnagrams = function (s: string, p: string) {
 //     const chars = new Array(26).fill(0), res: number[] = [];
-    
+
 //     for(let i = 0; i < p.length; i++) {
 //         chars[p.charCodeAt(i) - 97]--;
 //     }
-    
-    
+
 //     main:
 //     for(let i = 0; i < s.length; i++){
 //         chars[s.charCodeAt(i) - 97]++;
@@ -3168,9 +3167,64 @@ let sum = (num1, num2) => num1 + num2
 //         for(let j = 0; j < 26; j++){
 //             if(chars[j]) continue main;
 //         }
-        
+
 //         res.push(i - p.length + 1);
 //     }
-    
+
 //     return res;
 // };
+
+// 424. Longest Repeating Character Replacement
+// function characterReplacement(s: string, k: number): number {
+//     const charCounts: { [key: string]: number } = {};
+//     let mostFreqCharCount = 0;
+//     let left = 0;
+
+//     for (let right = 0; right < s.length; right++) {
+//         const char = s[right];
+
+//         // Increment count of newly added char
+//         charCounts[char] = (charCounts[char] ?? 0) + 1;
+
+//         // Newly added char could be most frequent
+//         mostFreqCharCount = Math.max(mostFreqCharCount, charCounts[char]);
+
+//         // If our substringLength !== mostFreqCharCount, then our substring contains
+//         // non-optimal chars. If we have more than k non-optimal chars, we need to
+//         // decrease our window by shifting the left bound.
+//         const substringLength = right - left + 1;
+//         const nonOptimalCharsCount = substringLength - mostFreqCharCount;
+//         if (nonOptimalCharsCount > k) {
+//             charCounts[s[left]]--;
+//             left++;
+//         }
+//     }
+
+//     // Because our window never shrinks, we don't need to keep track of the max substring
+//     // length. The max will be determined by the final state of our left bound.
+//     return s.length - left;
+// };
+
+// 299. Bulls and Cows
+// function getHint(secret: string, guess: string): string {
+//     let bulls = 0;
+//     let cows = 0;
+//     const hash: { [key: string]: number } = {};
+
+//     for (let i = 0; i < secret.length; i++) {
+//       if (secret[i] === guess[i]) {
+//         bulls++;
+//       } else if (secret[i] in hash) hash[secret[i]]++;
+//       else hash[secret[i]] = 1;
+//     }
+
+//     for (let i = 0; i < guess.length; i++) {
+//       if (secret[i] !== guess[i] && hash[guess[i]]) {
+//         cows++;
+//         hash[guess[i]]--;
+//       }
+//     }
+
+//     return `${bulls}A${cows}B`;
+//   }
+
