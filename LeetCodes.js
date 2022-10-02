@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 // twoSum
 /*var twoSum = function(arr, target) {
     let newarr = []
@@ -2735,7 +2735,7 @@ let sum = (num1, num2) => num1 + num2
 //     while (rev && p) {
 //         if (p.val !== rev.val) return false
 //         p = p.next
-//         rev = rev.next 
+//         rev = rev.next
 //     }
 //     return true
 // }
@@ -2766,7 +2766,7 @@ let sum = (num1, num2) => num1 + num2
 //     let max = 0
 
 //     for (let i = 0; i < array.length - 1; i++) {
-        
+
 //         for (let j = array.length - 1; j >= i; j--) {
 //             let num = array[j] < array[i] ? array[j] : array[i]
 //             let sum = num * (j - i)
