@@ -3228,3 +3228,19 @@ let sum = (num1, num2) => num1 + num2
 //     return `${bulls}A${cows}B`;
 //   }
 
+// 22. Generate Parentheses
+// function generateParenthesis(n: number): string[] {
+//     const dp: string[][] = [[''], ['()']];
+//     for (let i = 2; i <= n; i++) {
+//         const combinations: string[] = [];
+
+//         for (let inside = 0; inside <= i - 1; inside++) {
+//             const outside = i - 1 - inside;
+//             for (let j = 0; j < dp[inside].length; j++) 
+//                 for (let k = 0; k < dp[outside].length; k++)
+//                     combinations.push('(' + dp[inside][j] + ')' + dp[outside][k])
+//         }
+//         dp.push(combinations)
+//     }
+//     return dp[dp.length - 1]
+// };
